@@ -1,0 +1,13 @@
+[user]
+	name = Mario Uher
+	email = uher.mario@gmail.com
+[github]
+	user = haihappen
+[apply]
+	whitespace = nowarn
+[mergetool]
+	keepBackup = true
+[core]
+	excludesfile = /Users/mario/.gitignore
+	quotepath = false
+	whitespace = -blank-at-eol
