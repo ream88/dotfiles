@@ -17,7 +17,7 @@ ZSH_THEME="haihappen"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Dont share history across tabs.
 SHARE_HISTORY="false"
