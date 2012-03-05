@@ -19,6 +19,9 @@ ZSH_THEME="haihappen"
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
+# Dont share history across tabs.
+SHARE_HISTORY="false"
+
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
 
