@@ -37,6 +37,8 @@ export PATH=/Users/mario/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sb
 # Autocomplete path
 cdpath=(. ~ ~/Work ~/Work/*)
 
+alias ip="ipconfig getifaddr en1"
+
 # Bundle editor
 export EDITOR=choc
 
