@@ -7,6 +7,9 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="haihappen"
 
+# Tab/Window title
+precmd () { print -Pn "\e]2;%~\a" }
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
