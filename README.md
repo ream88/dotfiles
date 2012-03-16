@@ -5,15 +5,14 @@ These are config files to set up a system the way I like it.
 
 ```sh
 git clone git@github.com:haihappen/dotfiles.git ~/.dotfiles
-cd .dotfiles
-./install.rb
+cd ~/.dotfiles && rake
 ```
 
 You can remove them easily too!
 
 ```sh
-~/.dotfiles/uninstall.rb
-rm -rf ~/.dotfiles
+cd ~/.dotfiles && rake uninstall
+cd ~ && rm -rf ~/.dotfiles
 ```
 
 ## Copyright
