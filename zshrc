@@ -22,7 +22,7 @@ precmd () { print -Pn "\e]2;%~\a" }
 # Uncomment following line if you want to disable autosetting terminal title.
 DISABLE_AUTO_TITLE="true"
 
-# Dont share history across tabs.
+# Dont share history across tabs, very annoying!
 SHARE_HISTORY="false"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
@@ -37,15 +37,16 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/Users/mario/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/sbin
 
-# Autocomplete path
+# Autocomplete path, so `cd rails` jumpts to '~/Work/Other/rails'
 cdpath=(. ~ ~/Work ~/Work/*)
 
+# Simple alias for returning the current (wireless) ip address.
 alias ip="ipconfig getifaddr en1"
 
-# Bundle editor
+# Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
 export EDITOR=choc
 
-# Fast ruby
+# Faster ruby, but needs more RAM!
 export RUBY_HEAP_MIN_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
