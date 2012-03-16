@@ -7,9 +7,6 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="haihappen"
 
-# Tab/Window title
-precmd () { print -Pn "\e]2;%~\a" }
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -30,18 +27,22 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew rbates bundler rails3 heroku powder)
+plugins=(git brew bundler rails3 heroku powder osx)
 
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-export PATH=/Users/mario/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/sbin
 
 # Autocomplete path, so `cd rails` jumpts to '~/Work/Other/rails'
 cdpath=(. ~ ~/Work ~/Work/*)
 
+
+
 # Simple alias for returning the current (wireless) ip address.
 alias ip="ipconfig getifaddr en1"
+
+
+
+# Customize to your needs...
+export PATH=/Users/mario/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/sbin
 
 # Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
 export EDITOR=choc
