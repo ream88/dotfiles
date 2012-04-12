@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+input = STDIN.read unless STDIN.tty?
+
+if input
+  IO.popen('pbcopy', 'w').print(input)
+else
+  puts IO.popen('pbpaste', 'r').read
+end
