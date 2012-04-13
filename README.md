@@ -1,17 +1,26 @@
-These are config files to set up a system the way I like it.
+These are config files and commands to set up a system the way I like it.
 
-# Installation
+  ```sh
+  $ ip # Returns current (wireless) IP address.
+  ```
+  
+  ```sh
+  $ cb # Returns clipboard content.
+  $ ls | cb # Sets clipboard content.
+  ```
+
+## Installation
 
 ```sh
-git clone git@github.com:haihappen/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles && rake
+$ git clone git@github.com:haihappen/dotfiles.git ~/.dotfiles
+$ cd ~/.dotfiles && rake
 ```
 
 You can remove them easily too!
 
 ```sh
-cd ~/.dotfiles && rake uninstall
-cd ~ && rm -rf ~/.dotfiles
+$ cd ~/.dotfiles && rake uninstall
+$ cd ~ && rm -rf ~/.dotfiles
 ```
 
 ## Copyright
