@@ -36,13 +36,6 @@ source $ZSH/oh-my-zsh.sh
 # Autocomplete path, so `cd rails` jumpts to '~/Work/Other/rails'
 cdpath=(. ~ ~/Work ~/Work/*)
 
-
-
-# Simple alias for returning the current (wireless) ip address.
-alias ip="ipconfig getifaddr en1"
-
-
-
 # Customize to your needs...
 export PATH=/Users/mario/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/sbin
 
