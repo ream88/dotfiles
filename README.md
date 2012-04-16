@@ -8,6 +8,10 @@ These are config files and commands to set up a system the way I like it.
   $ cb # Returns clipboard content.
   $ ls | cb # Sets clipboard content.
   ```
+  
+  ```sh
+  $ rds # Authorize on Amazon RDS.
+  ```
 
 ## Installation
 

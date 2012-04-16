@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+
+require 'hashr'
+require 'open-uri'
+require 'psych'
+require 'right_aws'
+
+file = File.join(File.dirname(__FILE__), 'rds.yml')
+
+config = Hashr.new(if File.exist?(file)
+  Psych.load(File.open(file, 'r'))
+end)
+
+prompt = proc do |message, default = nil|
+  print(message)
+  print(" [#{default}]") if default
+  print(': ')
+  
+  value = STDIN.readline.chomp
+  value = default or raise("#{message} not provided!") if value.strip.empty?
+  value
+end
+
+unless config.credentials?
+  puts 'Please provide your AWS credentials'
+  
+  config.credentials = Hashr.new(
+    group:         prompt.call('Database Security Group', 'heroku'),
+    access_key_id: prompt.call('Access Key ID'),
+    access_key:    prompt.call('Access Key')
+  )
+end
+
+rds = RightAws::RdsInterface.new(config.credentials.access_key_id, config.credentials.access_key)  
+last_ip = config.last_ip
+config.last_ip = current_ip = open('http://automation.whatismyip.com/n09230945.asp').read
+
+rds.revoke_db_security_group_ingress(config.credentials.group, cidrip: "#{last_ip}/32") if rds.describe_db_security_groups(config.credentials.group).first[:ip_ranges].any? { |ip_range| ip_range[:cidrip] == "#{last_ip}/32" }
+rds.authorize_db_security_group_ingress(config.credentials.group, cidrip: "#{current_ip}/32") if rds.describe_db_security_groups(config.credentials.group).first[:ip_ranges].none? { |ip_range| ip_range[:cidrip] == "#{current_ip}/32" }
+
+Psych.dump(config.to_hash, File.open(file, 'w+'))
