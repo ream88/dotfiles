@@ -21,9 +21,6 @@ ZSH_THEME="haihappen"
 # Uncomment following line if you want to disable autosetting terminal title.
 DISABLE_AUTO_TITLE="true"
 
-# Dont share history across tabs, very annoying!
-SHARE_HISTORY="false"
-
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
 
@@ -33,7 +30,18 @@ plugins=(brew bundler git heroku npm osx powder rails3)
 
 source $ZSH/oh-my-zsh.sh
 
-# Autocomplete path, so `cd rails` jumpts to '~/Work/Other/rails'
+
+# Don't cd without `cd` ;)
+unsetopt autocd
+
+# Dont share history across tabs, very annoying!
+unsetopt sharehistory
+
+# Dont correct arguments
+unsetopt correct_all
+setopt correct
+
+# Autocomplete path, so `cd rails` jumpts to `~/Work/Other/rails`
 cdpath=(. ~ ~/Work ~/Work/*)
 
 # Customize to your needs...
