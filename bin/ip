@@ -1,3 +1,18 @@
 #!/bin/sh
 
-ipconfig getifaddr en1
+case "$1" in
+"-h" | "--help")
+  echo "usage: ip [args]
+Returns the current Wi-fi IP address.
+
+  -h, --help      Prints this help.
+  -e, --external  Returns the current external IP address using the ipconfig.me service.
+"
+  ;;
+"-e" | "--external")
+  curl ifconfig.me/ip
+  ;;
+*)
+  ipconfig getifaddr en1
+  ;;
+esac
