@@ -6,11 +6,11 @@ case "$1" in
 Returns the current Wi-fi IP address.
 
   -h, --help      Prints this help.
-  -e, --external  Returns the current external IP address using the ipconfig.me service.
+  -e, --external  Returns the current external IP address using whatismyip.com service.
 "
   ;;
 "-e" | "--external")
-  curl ifconfig.me/ip
+  curl http://automation.whatismyip.com/n09230945.asp; echo
   ;;
 *)
   ipconfig getifaddr en1
