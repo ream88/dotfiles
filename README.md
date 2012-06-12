@@ -1,7 +1,7 @@
 These are config files and commands to set up a system the way I like it.
 
   ```sh
-  $ ip # Returns current (wireless) IP address.
+  $ ip [-e] # Returns current (Wi-fi) IP address or current external IP address using the [ipconfig.me](http://ipconfig.me) service.
   ```
   
   ```sh
