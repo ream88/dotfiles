@@ -1,14 +1,46 @@
 #!/usr/bin/env ruby
+# encoding: utf-8
 
 require 'hashr'
 require 'open-uri'
-require 'psych'
+require 'yaml'
 require 'right_aws'
+
+class RDS
+  def initialize(access_key_id, access_key, options = {})
+    @rds = RightAws::RdsInterface.new(access_key_id, access_key, options)
+  end
+
+  def revoke(group, ip)
+    cidrip = cidrip(ip)
+    return unless include?(group, cidrip)
+    
+    puts "Revoking #{ip} ..."
+    @rds.revoke_db_security_group_ingress(group, cidrip: cidrip)
+  end
+
+  def authorize(group, ip)
+    cidrip = cidrip(ip)
+    return if include?(group, cidrip)
+    
+    puts "Authorizing #{ip} ..."
+    @rds.authorize_db_security_group_ingress(group, cidrip: cidrip)
+  end
+
+private
+  def include?(group, ip)
+    @rds.describe_db_security_groups(group).first[:ip_ranges].any? { |r| r[:cidrip] == ip }
+  end
+
+  def cidrip(ip)
+    "#{ip}/32"
+  end
+end
 
 file = File.join(File.dirname(__FILE__), 'rds.yml')
 
 config = Hashr.new(if File.exist?(file)
-  Psych.load(File.open(file, 'r'))
+  YAML.load(File.open(file, 'r'))
 end)
 
 prompt = proc do |message, default = nil|
@@ -26,24 +58,23 @@ unless config.credentials?
   
   config.credentials = Hashr.new(
     group:         prompt.call('Database Security Group', 'heroku'),
+    region:        prompt.call('Region', 'eu-west-1'),
     access_key_id: prompt.call('Access Key ID'),
     access_key:    prompt.call('Access Key')
   )
 end
 
 begin
-  rds = RightAws::RdsInterface.new(config.credentials.access_key_id, config.credentials.access_key)  
   last_ip = config.last_ip
   config.last_ip = current_ip = open('http://automation.whatismyip.com/n09230945.asp').read
   
-  # Remove old IP
-  rds.revoke_db_security_group_ingress(config.credentials.group, cidrip: "#{last_ip}/32") if rds.describe_db_security_groups(config.credentials.group).first[:ip_ranges].any? { |ip_range| ip_range[:cidrip] == "#{last_ip}/32" }
+  rds = RDS.new(config.credentials.access_key_id, config.credentials.access_key, region: config.credentials.region, logger: Logger.new('/tmp/rds.log'))
   
-  # Add new IP
-  rds.authorize_db_security_group_ingress(config.credentials.group, cidrip: "#{current_ip}/32") if rds.describe_db_security_groups(config.credentials.group).first[:ip_ranges].none? { |ip_range| ip_range[:cidrip] == "#{current_ip}/32" }
+  rds.revoke(config.credentials.group, last_ip)
+  rds.authorize(config.credentials.group, current_ip)
   
   # Everything was ok, config seems to be valid -> store it!
-  Psych.dump(config.to_hash, File.open(file, 'w+'))
+  YAML.dump(config.to_hash, File.open(file, 'w+'))
 rescue => ex
   puts ex
 end
