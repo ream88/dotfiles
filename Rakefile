@@ -1,10 +1,13 @@
 namespace :install do
   task :dotfiles do
     Files.each('dotfiles') do |file|
-      source = File.join(Dir.pwd, file)
+      directory = File.directory?(file)
+      source = directory ? Dir.glob(File.join(Dir.pwd, file, '**')) : File.join(Dir.pwd, file)
       destination = File.join(ENV['HOME'], ".#{file}")
       
-      system("ln -vsf #{source} #{destination}")
+      FileUtils.mkdir_p(destination) if directory
+      
+      FileUtils.symlink(source, destination, force: true)
     end
   end
 
@@ -16,7 +19,7 @@ namespace :install do
       FileUtils.chmod('+x', source)
       FileUtils.mkdir_p(File.dirname(destination))
       
-      system("ln -vsf #{source} #{destination}")
+      FileUtils.symlink(source, destination, force: true)
     end
   end
 end
@@ -31,16 +34,15 @@ namespace :uninstall do
     Files.each('dotfiles') do |file|
       destination = File.join(ENV['HOME'], ".#{file}")
       
-      system("rm -v #{destination}")
+      FileUtils.rm_rf(destination)
     end
   end
 
   task :bin do
     Files.each('bin') do |file|
-      source = File.join(Dir.pwd, file)
       destination = File.join('/', 'usr', 'local', 'bin', file)
       
-      system("rm -v #{destination}")
+      FileUtils.rm_rf(destination)
     end
   end
 end
