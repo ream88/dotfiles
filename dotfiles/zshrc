@@ -30,6 +30,9 @@ plugins=(brew bundler git heroku npm osx powder rails3)
 
 source $ZSH/oh-my-zsh.sh
 
+# Moar aliases!
+alias gd='git diff'
+
 # Don't cd without `cd` ;)
 unsetopt autocd
 
