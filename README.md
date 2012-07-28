@@ -16,7 +16,7 @@ These are config files and commands to set up a system the way I like it.
 ## Installation
 
 ```sh
-$ git clone git@github.com:haihappen/dotfiles.git ~/.dotfiles
+$ git clone git://github.com/haihappen/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles && rake
 ```
 
