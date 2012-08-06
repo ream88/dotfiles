@@ -11,6 +11,7 @@ These are config files and commands to set up a system the way I like it.
   
   ```sh
   $ rds # Authorize on Amazon RDS.
+  $ ec2 # Authorize on Amazon EC2.
   ```
 
 ## Installation
