@@ -37,6 +37,7 @@ class RDS < Thor
 
 
   desc 'authorize', 'Authorize current public IP'
+  default_task 'authorize'
   def authorize
     authenticated?
     
