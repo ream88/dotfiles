@@ -34,6 +34,7 @@ source $ZSH/oh-my-zsh.sh
 alias gd='git diff'
 alias gap='git add -p'
 alias rmdsstores='find ./ -type f | grep .DS_Store | xargs rm'
+alias j='jasmine-headless-webkit --color'
 
 # Don't cd without `cd` ;)
 unsetopt autocd
