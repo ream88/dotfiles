@@ -46,9 +46,6 @@ unsetopt sharehistory
 unsetopt correct_all
 setopt correct
 
-# Homebrew installed rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # Autocomplete path, so `cd rails` jumpts to `~/Work/Other/rails`
 cdpath=(. ~ ~/Code ~/Code/*)
 
