@@ -57,10 +57,9 @@ export PATH=/Users/mario/.rbenv/shims:/Users/mario/.rbenv/bin:/usr/local/bin:/us
 export EDITOR=choc
 
 # Faster ruby, but needs more RAM!
-RUBY_HEAP_MIN_SLOTS=500000
-RUBY_HEAP_SLOTS_INCREMENT=250000
-RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-RUBY_GC_MALLOC_LIMIT=50000000
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_FREE_MIN=500000
+export RUBY_HEAP_MIN_SLOTS=40000
 
 # Initialize rbenv
 eval "$(rbenv init -)"
