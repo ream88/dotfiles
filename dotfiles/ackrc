@@ -1,1 +1,2 @@
 --type-add=css=.scss,.sass,.less
+--ignore-dir=.bundle
