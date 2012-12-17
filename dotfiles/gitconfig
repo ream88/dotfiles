@@ -33,4 +33,4 @@
 	unstage = reset HEAD
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s" --decorate
 [push]
-	default = simple
+	default = current
