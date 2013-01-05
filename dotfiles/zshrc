@@ -36,6 +36,7 @@ alias gap='git add -p'
 alias rmdsstores='find ./ -type f | grep .DS_Store | xargs rm'
 alias j='jasmine-headless-webkit --color'
 alias lisa='ls -lisa'
+alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
 # Don't cd without `cd` ;)
 unsetopt autocd
