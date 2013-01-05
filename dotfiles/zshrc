@@ -37,6 +37,7 @@ alias rmdsstores='find ./ -type f | grep .DS_Store | xargs rm'
 alias j='jasmine-headless-webkit --color'
 alias lisa='ls -lisa'
 alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+alias sleep='pmset sleepnow'
 
 # Don't cd without `cd` ;)
 unsetopt autocd
