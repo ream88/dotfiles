@@ -29,15 +29,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(brew bundler git heroku npm osx powder rails3)
 
 source $ZSH/oh-my-zsh.sh
-
-# Moar aliases!
-alias gd='git diff'
-alias gap='git add -p'
-alias rmdsstores='find ./ -type f | grep .DS_Store | xargs rm'
-alias j='jasmine-headless-webkit --color'
-alias lisa='ls -lisa'
-alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
-alias sleep='pmset sleepnow'
+source $HOME/.zsh/aliases.sh
 
 # Don't cd without `cd` ;)
 unsetopt autocd
