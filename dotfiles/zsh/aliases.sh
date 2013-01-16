@@ -16,6 +16,12 @@ alias j='jasmine-headless-webkit --color'
 # Other
 alias lisa='ls -lisa'
 
+# gt is alias for gittower .
+gt() {
+  DIR="${1:-.}"
+  gittower "$DIR"
+}
+
 # Change theme of Terminal.app
 tabc() {
   NAME="${1:-Default}"
