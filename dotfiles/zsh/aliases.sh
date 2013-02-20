@@ -7,7 +7,7 @@ alias sleep='pmset sleepnow'
 # Git
 alias gd='git diff'
 alias gap='git add -p'
-
+alias glo='git log --oneline'
 
 # Programming
 alias j='jasmine-headless-webkit --color'
