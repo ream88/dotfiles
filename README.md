@@ -1,18 +1,18 @@
 These are config files and commands to set up a system the way I like it.
 
-  ```sh
-  $ ip [-e] # Returns current (Wi-fi) IP address or current external IP address.
-  ```
+```sh
+$ ip [-e] # Returns current (Wi-fi) IP address or current external IP address.
+```
+
+```sh
+$ cb # Returns clipboard content.
+$ ls | cb # Sets clipboard content.
+```
   
-  ```sh
-  $ cb # Returns clipboard content.
-  $ ls | cb # Sets clipboard content.
-  ```
-  
-  ```sh
-  $ rds # Authorize on Amazon RDS.
-  $ ec2 # Authorize on Amazon EC2.
-  ```
+```sh
+$ rds # Authorize on Amazon RDS.
+$ ec2 # Authorize on Amazon EC2.
+```
 
 ## Installation
 
@@ -46,7 +46,7 @@ launchctl unload /Users/mario/Library/LaunchAgents/com.user.dropbox.personal.pli
 
 (The MIT license)
 
-Copyright (c) 2011-2012 Mario Uher
+Copyright (c) 2011-2013 Mario Uher
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
