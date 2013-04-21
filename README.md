@@ -1,10 +1,6 @@
 These are config files and commands to set up a system the way I like it.
 
 ```sh
-$ ip [-e] # Returns current (Wi-fi) IP address or current external IP address.
-```
-
-```sh
 $ cb # Returns clipboard content.
 $ ls | cb # Sets clipboard content.
 ```
