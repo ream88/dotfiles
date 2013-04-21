@@ -11,7 +11,6 @@ $ ls | cb # Sets clipboard content.
   
 ```sh
 $ rds # Authorize on Amazon RDS.
-$ ec2 # Authorize on Amazon EC2.
 ```
 
 ## Installation
