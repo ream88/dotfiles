@@ -8,10 +8,6 @@ $ ip [-e] # Returns current (Wi-fi) IP address or current external IP address.
 $ cb # Returns clipboard content.
 $ ls | cb # Sets clipboard content.
 ```
-  
-```sh
-$ rds # Authorize on Amazon RDS.
-```
 
 ## Installation
 
