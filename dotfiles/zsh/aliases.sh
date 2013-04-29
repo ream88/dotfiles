@@ -35,6 +35,6 @@ tabc() {
 # Change to Danger theme when executing ssh
 ssh() {
   tabc Danger
-  /usr/bin/ssh "$*"
+  /usr/bin/ssh $*
   tabc
 }
