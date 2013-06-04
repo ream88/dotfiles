@@ -23,9 +23,11 @@
 		"*.so",
 		"*.sublime-workspace",
 		"*.suo",
+		".dat*",
 		".DS_Store",
 		".gitignore",
-		".ruby-version"
+		".repl_history",
+		".ruby-version",
 	],
 	"fold_buttons": false,
 	"folder_exclude_patterns":
