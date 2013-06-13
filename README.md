@@ -30,7 +30,7 @@ $ launchctl load /Users/mario/Library/LaunchAgents/com.user.dropbox.personal.pli
 ### Uninstalling
 
 ```sh
-launchctl unload /Users/mario/Library/LaunchAgents/com.user.dropbox.personal.plist# Run for each!
+launchctl unload /Users/mario/Library/LaunchAgents/com.user.dropbox.personal.plist # Run for each!
 ```
 
 ## Copyright
