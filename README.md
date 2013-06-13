@@ -22,15 +22,16 @@ $ cd ~ && rm -rf ~/.dotfiles
 ### Installing the LaunchAgents
 
 ```sh
-$ mkdir ~/Library/LaunchAgents
-$ cp /Your/Download/Directory/*.plist ~/Library/LaunchAgents
-$ launchctl load /Users/mario/Library/LaunchAgents/com.user.dropbox.personal.plist # Run for each!
+$ mkdir ~/Library/LaunchAgents && cd $_
+$ cp /Your/Download/Directory/*.plist .
+$ find com.user* | xargs launchctl load
 ```
 
 ### Uninstalling
 
 ```sh
-launchctl unload /Users/mario/Library/LaunchAgents/com.user.dropbox.personal.plist # Run for each!
+$ cd ~Library/LaunchAgents
+$ find com.user* | xargs launchctl unload
 ```
 
 ## Copyright
