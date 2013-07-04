@@ -1,0 +1,18 @@
+#!/bin/sh
+
+case "$1" in
+"-h" | "--help")
+  echo "usage: ip [args]
+Returns the current Wi-fi IP address.
+
+  -h, --help      Prints this help.
+  -e, --external  Returns the current external IP address using whatismyip.com service.
+"
+  ;;
+"-e" | "--external")
+  curl -s http://icanhazip.com
+  ;;
+*)
+  ipconfig getifaddr en1
+  ;;
+esac
