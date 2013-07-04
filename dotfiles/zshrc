@@ -50,6 +50,9 @@ export PATH=/Users/mario/.rbenv/shims:/Users/mario/.rbenv/bin:/usr/local/bin:/us
 # Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
 export EDITOR=subl
 
+# Paths
+export MYSQL_PATH=/usr/local/var/mysql
+
 # Faster ruby, but needs more RAM!
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_FREE_MIN=500000
