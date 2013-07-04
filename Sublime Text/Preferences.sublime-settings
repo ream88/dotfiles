@@ -27,7 +27,7 @@
 		".DS_Store",
 		".gitignore",
 		".repl_history",
-		".ruby-version",
+		".ruby-version"
 	],
 	"fold_buttons": false,
 	"folder_exclude_patterns":
