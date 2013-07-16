@@ -14,6 +14,7 @@ alias j='jasmine-headless-webkit --color'
 
 
 # Other
+alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
 alias lisa='ls -lisa'
 # Quick way to rebuild the Launch Services database and get rid
 # of duplicates in the Open With submenu.
