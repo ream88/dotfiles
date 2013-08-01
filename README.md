@@ -58,7 +58,7 @@ Icon | Name | Description
 ![Anvil](Resources/Anvil.png) | [Anvil](http://anvilformac.com) | "Run your sites locally."
 ![Tower](Resources/Tower.png) | [Tower](http://www.git-tower.com) | Sometimes git needs an UI.
 
-Tools live is hard without.
+Tools life is hard without.
 
 Icon | Name | Description
 ----:|------|------------
