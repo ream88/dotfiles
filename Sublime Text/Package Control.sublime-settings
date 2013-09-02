@@ -1,14 +1,15 @@
 {
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"ApacheConf.tmLanguage",
 		"CoffeeScript",
 		"DashDoc",
 		"Emmet",
 		"Package Control",
 		"RailsCasts Colour Scheme",
 		"Sass",
-		"SideBarEnhancements",
 		"Syntax Highlighting for Sass",
 		"Theme - Soda",
 		"TrailingSpaces"
