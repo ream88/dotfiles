@@ -68,7 +68,7 @@ Icon | Name | Description
 ![BetterZip](Resources/BetterZip.png) | [BetterZip](http://macitbetter.com) | Better zips! ;)
 ![The Unarchiver](Resources/The Unarchiver.png) | [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html) | Better Archive Utility.app.
 ![Skitch](Resources/Skitch.png) | [Skitch](http://evernote.com/skitch/) | Take screenshots and annotate them.
-![LittleSnapper](Resources/LittleSnapper.png) | [LittleSnapper](http://realmacsoftware.com/ember) | Take screenshots and annotate them - the second.
+![Ember](Resources/Ember.png) | [Ember](http://realmacsoftware.com/ember) | Take screenshots and annotate them - the second.
 ![iA Writer](Resources/iA Writer.png) | [iA Writer](http://www.iawriter.com/mac/) | "Keep your hands on the keyboard and your mind in the text." - Write Markdown.
 ![Mou](Resources/Mou.png) | [Mou]() | Write Markdown - the second.
 ![Collective](Resources/Collective.png) | [Collective](http://www.generation-loss.com/collective/) | "Clipboard History for Mac OS X. Done Right."
