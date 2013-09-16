@@ -26,7 +26,6 @@
 		"*.suo",
 		".dat*",
 		".DS_Store",
-		".gitignore",
 		".repl_history",
 		".ruby-version"
 	],
