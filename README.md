@@ -26,16 +26,15 @@ $ cd ~ && rm -rf ~/.dotfiles
 ### Installing the LaunchAgents
 
 ```sh
-$ mkdir ~/Library/LaunchAgents && cd $_
-$ cp /Your/Download/Directory/*.plist .
-$ find com.user* | xargs launchctl load
+$ mkdir ~/Library/LaunchAgents
+$ cp *.plist ~/Library/LaunchAgents
+$ find  ~/Library/LaunchAgents/com.user* | xargs launchctl load
 ```
 
 ### Uninstalling
 
 ```sh
-$ cd ~Library/LaunchAgents
-$ find com.user* | xargs launchctl unload
+$ find ~/Library/LaunchAgents/com.user* | xargs launchctl unload
 ```
 
 ## Apps
