@@ -1,4 +1,5 @@
+.bundle
 .DS_Store
 .powenv
 .rbenv-version
-.bundle
+.ruby-version
