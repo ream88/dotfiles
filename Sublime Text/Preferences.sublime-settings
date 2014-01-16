@@ -1,56 +1,56 @@
 {
-	"bold_folder_labels": true,
-	"color_scheme": "Packages/RailsCasts Colour Scheme/RailsCastsColorScheme.tmTheme",
-	"enable_tab_scrolling": false,
-	"ensure_newline_at_eof_on_save": true,
-	"file_exclude_patterns":
-	[
-		"*.a",
-		"*.class",
-		"*.db",
-		"*.dll",
-		"*.dylib",
-		"*.exe",
-		"*.idb",
-		"*.lib",
-		"*.ncb",
-		"*.o",
-		"*.obj",
-		"*.pdb",
-		"*.psd",
-		"*.pyc",
-		"*.pyo",
-		"*.sdf",
-		"*.so",
-		"*.sublime-workspace",
-		"*.suo",
-		".dat*",
-		".DS_Store",
-		".repl_history",
-		".ruby-version"
-	],
-	"fold_buttons": false,
-	"folder_exclude_patterns":
-	[
-		".bundle",
-		".git",
-		".hg",
-		".sass-cache",
-		".svn",
-		"CVS",
-		"log",
-		"tmp"
-	],
-	"font_face": "Monaco",
-	"font_size": 10,
-	"hot_exit": false,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"remember_open_files": false,
-	"tab_size": 2,
-	"theme": "Soda Light.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+  "bold_folder_labels": true,
+  "color_scheme": "Packages/RailsCasts Colour Scheme/RailsCastsColorScheme.tmTheme",
+  "enable_tab_scrolling": false,
+  "ensure_newline_at_eof_on_save": true,
+  "file_exclude_patterns":
+  [
+    "*.a",
+    "*.class",
+    "*.db",
+    "*.dll",
+    "*.dylib",
+    "*.exe",
+    "*.idb",
+    "*.lib",
+    "*.ncb",
+    "*.o",
+    "*.obj",
+    "*.pdb",
+    "*.psd",
+    "*.pyc",
+    "*.pyo",
+    "*.sdf",
+    "*.so",
+    "*.sublime-workspace",
+    "*.suo",
+    ".dat*",
+    ".DS_Store",
+    ".repl_history",
+    ".ruby-version"
+  ],
+  "fold_buttons": false,
+  "folder_exclude_patterns":
+  [
+    ".bundle",
+    ".git",
+    ".hg",
+    ".sass-cache",
+    ".svn",
+    "CVS",
+    "log",
+    "tmp"
+  ],
+  "font_face": "Monaco",
+  "font_size": 10,
+  "hot_exit": false,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "remember_open_files": false,
+  "tab_size": 2,
+  "theme": "Soda Light.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
 }
