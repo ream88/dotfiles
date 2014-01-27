@@ -6,7 +6,7 @@ $ ip [-e] # Returns current (Wi-fi) IP address or current external IP address.
 
 ```sh
 $ cb # Returns clipboard content.
-$ ls | cb # Sets clipboard content.
+$ ls | cb # Sets clipboard content.
 ```
 
 ## Installation
@@ -21,20 +21,6 @@ You can remove them easily too!
 ```sh
 $ cd ~/.dotfiles && rake uninstall
 $ cd ~ && rm -rf ~/.dotfiles
-```
-
-### Installing the LaunchAgents
-
-```sh
-$ mkdir ~/Library/LaunchAgents
-$ cp *.plist ~/Library/LaunchAgents
-$ find  ~/Library/LaunchAgents/com.user* | xargs launchctl load
-```
-
-### Uninstalling
-
-```sh
-$ find ~/Library/LaunchAgents/com.user* | xargs launchctl unload
 ```
 
 ## Apps
