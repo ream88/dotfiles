@@ -34,13 +34,14 @@ Icon | Name | Description
 ![Kaleidoscope](Resources/Kaleidoscope.png) | [Kaleidoscope](http://www.kaleidoscopeapp.com) | Diff app with nice UI.
 ![Dash](Resources/Dash.png) | [Dash](http://kapeli.com/dash) | Offline docs.
 ![Sequel Pro](Resources/Sequel Pro.png) | [Sequel Pro](http://www.sequelpro.com) | MySQL Client for OS X.
+![Base](Resources/Base.png) | [Base](http://menial.co.uk/base/) | Base is an application for creating, designing, editing and browsing SQLite 3 database files.
+![PG Commander](Resources/PG Commander.png) | [PG Commander](https://eggerapps.at/pgcommander/) | A modern PostgreSQL Client for your Mac.
 ![Hues](Resources/Hues.png) | [Hues](http://giantcomet.com/hues/) | Color picker.
 ![iOS Simulator](Resources/iOS Simulator.png) | [iOS Simulator](https://developer.apple.com/xcode/) | Test your design on iOS devices.
 ![xScope](Resources/xScope.png) | [xScope](http://iconfactory.com/software/xscope) | Measure different things.
 ![ImageOptim](Resources/ImageOptim.png) | [ImageOptim](http://imageoptim.com) | Optimize your images for the web.
 ![Pixelmator](Resources/Pixelmator.png) | [Pixelmator](http://www.pixelmator.com) | "Photoshop for the rest of us."
 ![Sketch](Resources/Sketch.png) | [Sketch](http://www.bohemiancoding.com/sketch/) | Illustrator for the rest of us.
-![Anvil](Resources/Anvil.png) | [Anvil](http://anvilformac.com) | "Run your sites locally."
 ![Tower](Resources/Tower.png) | [Tower](http://www.git-tower.com) | Sometimes git needs an UI.
 
 Tools life is hard without.
@@ -48,16 +49,14 @@ Tools life is hard without.
 Icon | Name | Description
 ----:|------|------------
 ![1Password](Resources/1Password.png) | [1Password](https://agilebits.com/onepassword) | Remember one password!
-![AppCleaner](Resources/AppCleaner.png) | [AppCleaner](http://www.freemacsoft.net/appcleaner/) | Uninstall all the stuff!
 ![Automator](Resources/Automator.png) | [Automator](http://support.apple.com/kb/HT2488?viewlocale=en_US&locale=en_US) | Automate all the stuff!
-![BetterZip](Resources/BetterZip.png) | [BetterZip](http://macitbetter.com) | Better zips! ;)
 ![The Unarchiver](Resources/The Unarchiver.png) | [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html) | Better Archive Utility.app.
 ![Skitch](Resources/Skitch.png) | [Skitch](http://evernote.com/skitch/) | Take screenshots and annotate them.
 ![Ember](Resources/Ember.png) | [Ember](http://realmacsoftware.com/ember) | Take screenshots and annotate them - the second.
-![iA Writer](Resources/iA Writer.png) | [iA Writer](http://www.iawriter.com/mac/) | "Keep your hands on the keyboard and your mind in the text." - Write Markdown.
+![Writer Pro](Resources/Writer Pro.png) | [Writer Pro](http://writer.pro) | Write Markdown.
 ![Mou](Resources/Mou.png) | [Mou]() | Write Markdown - the second.
-![Collective](Resources/Collective.png) | [Collective](http://www.generation-loss.com/collective/) | "Clipboard History for Mac OS X. Done Right."
 ![Moom](Resources/Moom.png) | [Moom](http://manytricks.com/moom/) | Better window handling for OS X.
+![Renamer](Resources/Renamer.png) | [Renamer](http://renamer.com) | Rename many files at once on your Mac.
 
 ## Copyright
 
