@@ -41,7 +41,7 @@ unsetopt sharehistory
 unsetopt correct_all
 setopt correct
 
-# Autocomplete path, so `cd rails` jumpts to `~/Work/Other/rails`
+# Autocomplete path, so `cd rails` jumpts to `~/Code/Other/rails`
 cdpath=(. ~ ~/Code ~/Code/*)
 
 # Customize to your needs...
