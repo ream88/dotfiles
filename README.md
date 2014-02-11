@@ -56,7 +56,7 @@ Icon | Name | Description
 ![Writer Pro](Resources/Writer Pro.png) | [Writer Pro](http://writer.pro) | Write Markdown.
 ![Mou](Resources/Mou.png) | [Mou]() | Write Markdown - the second.
 ![Moom](Resources/Moom.png) | [Moom](http://manytricks.com/moom/) | Better window handling for OS X.
-![Renamer](Resources/Renamer.png) | [Renamer](http://renamer.com) | Rename many files at once on your Mac.
+![Name Mangler](Resources/Name Mangler.png) | [Name Mangler](http://manytricks.com/namemangler) | Rename many files at once on your Mac.
 
 ## Copyright
 
