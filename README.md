@@ -36,6 +36,7 @@ Icon | Name | Description
 ![Sequel Pro](Resources/Sequel Pro.png) | [Sequel Pro](http://www.sequelpro.com) | MySQL Client for OS X.
 ![Base](Resources/Base.png) | [Base](http://menial.co.uk/base/) | Base is an application for creating, designing, editing and browsing SQLite 3 database files.
 ![PG Commander](Resources/PG Commander.png) | [PG Commander](https://eggerapps.at/pgcommander/) | A modern PostgreSQL Client for your Mac.
+![MongoHub](Resources/MongoHub.png) | [MongoHub](https://github.com/fotonauts/MongoHub-Mac) | A modern PostgreSQL Client for your Mac.
 ![Hues](Resources/Hues.png) | [Hues](http://giantcomet.com/hues/) | Color picker.
 ![iOS Simulator](Resources/iOS Simulator.png) | [iOS Simulator](https://developer.apple.com/xcode/) | Test your design on iOS devices.
 ![xScope](Resources/xScope.png) | [xScope](http://iconfactory.com/software/xscope) | Measure different things.
