@@ -39,7 +39,3 @@ ssh() {
   /usr/bin/ssh $*
   tabc
 }
-
-cat() {
-  echo "=^.^="
-}
