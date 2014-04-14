@@ -1,36 +1,25 @@
 namespace :install do
   task :dotfiles do
-    Files.each('dotfiles') do |file|
-      directory = File.directory?(file)
-      source = directory ? Dir.glob(File.join(Dir.pwd, file, '**')) : File.join(Dir.pwd, file)
-      destination = File.join(ENV['HOME'], ".#{file}")
-
-      FileUtils.mkdir_p(destination) if directory
-
-      FileUtils.symlink(source, destination, force: true)
+    Rake::FileList.new(File.expand_path('../dotfiles/*', __FILE__)).each do |source|
+      symlink source, source.pathmap("#{ENV['HOME']}/.%f"), force: true
     end
   end
 
   task :bin do
-    Files.each('bin') do |file|
-      source = File.join(Dir.pwd, file)
-      destination = File.join('/', 'usr', 'local', 'bin', file)
+    Rake::FileList.new(File.expand_path('../bin/*', __FILE__)).each do |source|
+      dest = source.pathmap('/usr/local/bin/%f')
 
-      FileUtils.chmod('+x', source)
-      FileUtils.mkdir_p(File.dirname(destination))
-
-      FileUtils.symlink(source, destination, force: true)
+      symlink source, dest, force: true
+      chmod '+x', dest
     end
   end
 
   task :sublime do
-    Files.each('Sublime Text') do |file|
-      source = File.join(Dir.pwd, file)
-      destination = File.join(ENV['HOME'], 'Library', 'Application Support', 'Sublime Text 3', 'Packages', 'User', file)
+    Rake::FileList.new(File.expand_path('../Sublime Text/*', __FILE__)).each do |source|
+      sublime = File.join(ENV['HOME'], 'Library', 'Application Support', 'Sublime Text 3', 'Packages', 'User')
+      dest = source.pathmap("#{sublime}/%f")
 
-      FileUtils.mkdir_p(File.dirname(destination))
-
-      FileUtils.symlink(source, destination, force: true)
+      symlink source, dest, force: true
     end
   end
 end
@@ -43,26 +32,22 @@ end
 
 namespace :uninstall do
   task :dotfiles do
-    Files.each('dotfiles') do |file|
-      destination = File.join(ENV['HOME'], ".#{file}")
-
-      FileUtils.rm_rf(destination)
+    Rake::FileList.new(File.expand_path('../dotfiles/*', __FILE__)).each do |source|
+      rm_rf source.pathmap("#{ENV['HOME']}/.%f")
     end
   end
 
   task :bin do
-    Files.each('bin') do |file|
-      destination = File.join('/', 'usr', 'local', 'bin', file)
-
-      FileUtils.rm_rf(destination)
+    Rake::FileList.new(File.expand_path('../bin/*', __FILE__)).each do |source|
+      rm_rf source.pathmap('/usr/local/bin/%f')
     end
   end
 
   task :sublime do
-    Files.each('Sublime Text') do |file|
-      destination = File.join(ENV['HOME'], 'Library', 'Application Support', 'Sublime Text 3', 'Packages', 'User', file)
+    Rake::FileList.new(File.expand_path('../Sublime Text/*', __FILE__)).each do |source|
+      sublime = File.join(ENV['HOME'], 'Library', 'Application Support', 'Sublime Text 3', 'Packages', 'User')
 
-      FileUtils.rm_rf(destination)
+      rm_rf source.pathmap("#{sublime}/%f")
     end
   end
 end
@@ -74,13 +59,3 @@ task :uninstall do
 end
 
 task default: :install
-
-class Files
-  def self.each(dir, &block)
-    Dir.chdir(File.join(File.dirname(__FILE__), dir)) do
-      Dir.glob('*').each do |file|
-        yield file
-      end
-    end
-  end
-end
