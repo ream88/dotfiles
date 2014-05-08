@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>346</string>
+	<string>381</string>
 	<key>AMApplicationVersion</key>
-	<string>2.3</string>
+	<string>2.4</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -77,131 +77,7 @@
 				</array>
 				<key>arguments</key>
 				<dict/>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 			</dict>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<false/>
-					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.path</string>
-					</array>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>2.0.1</string>
-				<key>AMApplication</key>
-				<array>
-					<string>Finder</string>
-				</array>
-				<key>AMParameterProperties</key>
-				<dict>
-					<key>replaceExisting</key>
-					<dict/>
-					<key>toDirectory</key>
-					<dict>
-						<key>isPathPopUp</key>
-						<true/>
-						<key>variableUUIDsInMenu</key>
-						<array/>
-					</dict>
-				</dict>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.path</string>
-					</array>
-				</dict>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Copy Finder Items.action</string>
-				<key>ActionName</key>
-				<string>Copy Finder Items</string>
-				<key>ActionParameters</key>
-				<dict>
-					<key>replaceExisting</key>
-					<false/>
-					<key>toDirectory</key>
-					<string>~/Desktop</string>
-				</dict>
-				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.CopyFiles</string>
-				<key>CFBundleVersion</key>
-				<string>2.0.1</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<true/>
-				<key>CanShowWhenRun</key>
-				<true/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryFilesAndFolders</string>
-				</array>
-				<key>Class Name</key>
-				<string>AMCopyFilesAction</string>
-				<key>InputUUID</key>
-				<string>13672E31-CC04-41DC-8009-6C7F41EDFFD6</string>
-				<key>Keywords</key>
-				<array>
-					<string>File</string>
-					<string>Copy</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>3B0460A6-AF21-4EE4-973A-ED3B600C9E47</string>
-				<key>UUID</key>
-				<string>AD54681B-876C-4454-B4FC-02EFFBEFEA87</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Finder</string>
-				</array>
-				<key>arguments</key>
-				<dict>
-					<key>0</key>
-					<dict>
-						<key>default value</key>
-						<string>~/Desktop</string>
-						<key>name</key>
-						<string>toDirectory</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>0</string>
-					</dict>
-					<key>1</key>
-					<dict>
-						<key>default value</key>
-						<false/>
-						<key>name</key>
-						<string>replaceExisting</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>1</string>
-					</dict>
-				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
-				<key>isViewVisible</key>
-				<true/>
-				<key>location</key>
-				<string>341.500000:412.000000</string>
-				<key>nibPath</key>
-				<string>/System/Library/Automator/Copy Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
-			</dict>
-			<key>isViewVisible</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -294,14 +170,12 @@
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>341.500000:309.000000</string>
+				<string>449.500000:397.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Change Type of Images.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Change Type of Images.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -447,14 +321,12 @@
 						<string>3</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>341.500000:205.000000</string>
+				<string>449.500000:293.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Scale Images.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Scale Images.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -462,26 +334,19 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>291ACD1F-35B1-4CA3-A020-8218EC8B1C0F</key>
+		<key>76D652AE-D352-49EB-AE9D-69655CEB5A1D</key>
+		<dict>
+			<key>from</key>
+			<string>5A0CB6C5-DA83-495F-854B-69E943900036 - 5A0CB6C5-DA83-495F-854B-69E943900036</string>
+			<key>to</key>
+			<string>4D4B5CB6-46AF-4F49-ABA5-5C8220AE2DE4 - 4D4B5CB6-46AF-4F49-ABA5-5C8220AE2DE4</string>
+		</dict>
+		<key>AD57118C-24B5-4E77-8E2D-23CF649000AD</key>
 		<dict>
 			<key>from</key>
 			<string>4D4B5CB6-46AF-4F49-ABA5-5C8220AE2DE4 - 4D4B5CB6-46AF-4F49-ABA5-5C8220AE2DE4</string>
 			<key>to</key>
 			<string>C9D166F6-26D6-4DC4-A11A-61B36871B053 - C9D166F6-26D6-4DC4-A11A-61B36871B053</string>
-		</dict>
-		<key>9AD50E88-E760-4A88-9585-113978BB4BBF</key>
-		<dict>
-			<key>from</key>
-			<string>AD54681B-876C-4454-B4FC-02EFFBEFEA87 - AD54681B-876C-4454-B4FC-02EFFBEFEA87</string>
-			<key>to</key>
-			<string>4D4B5CB6-46AF-4F49-ABA5-5C8220AE2DE4 - 4D4B5CB6-46AF-4F49-ABA5-5C8220AE2DE4</string>
-		</dict>
-		<key>E6767466-1005-4A75-9CFD-D1E5C06C4D96</key>
-		<dict>
-			<key>from</key>
-			<string>5A0CB6C5-DA83-495F-854B-69E943900036 - 5A0CB6C5-DA83-495F-854B-69E943900036</string>
-			<key>to</key>
-			<string>AD54681B-876C-4454-B4FC-02EFFBEFEA87 - AD54681B-876C-4454-B4FC-02EFFBEFEA87</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>

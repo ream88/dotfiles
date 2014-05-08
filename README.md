@@ -29,7 +29,7 @@ I'm working (as a web developer) with these apps on a daily basis.
 
 Icon | Name | Description
 ----:|------|------------
-![Sublime Text](Resources/Sublime Text.png) | [Sublime Text](http://www.sublimetext.com/3) | Atm the best editor available. Check this [post](http://blog.alexmaccaw.com/sublime-text) for the perfect setup.
+![Atom](Resources/Atom.png) | [Atom](https://atom.io) | A hackable text editor for the 21st Century.
 ![Transmit](Resources/Transmit.png) | [Transmit](http://panic.com/transmit/) | "The ultimate Mac OS X FTP + SFTP + S3 app."
 ![Kaleidoscope](Resources/Kaleidoscope.png) | [Kaleidoscope](http://www.kaleidoscopeapp.com) | Diff app with nice UI.
 ![Dash](Resources/Dash.png) | [Dash](http://kapeli.com/dash) | Offline docs.
