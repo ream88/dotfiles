@@ -1,13 +1,13 @@
 namespace :install do
   task :dotfiles do
-    Rake::FileList.new(File.expand_path('../dotfiles/*', __FILE__)).each do |source|
-      symlink source, source.pathmap("#{ENV['HOME']}/.%f"), force: true
+    Rake::FileList.new(__dir__ + '/dotfiles/*').each do |source|
+      symlink source, source.pathmap("%{^#{__dir__}/dotfiles/,#{ENV['HOME']}/.}X"), force: true
     end
   end
 
   task :bin do
-    Rake::FileList.new(File.expand_path('../bin/*', __FILE__)).each do |source|
-      dest = source.pathmap('/usr/local/bin/%f')
+    Rake::FileList.new(__dir__ + '/bin/*').each do |source|
+      dest = source.pathmap("%{^#{__dir__},/usr/local}X")
 
       symlink source, dest, force: true
       chmod '+x', dest
@@ -22,14 +22,14 @@ end
 
 namespace :uninstall do
   task :dotfiles do
-    Rake::FileList.new(File.expand_path('../dotfiles/*', __FILE__)).each do |source|
-      rm_rf source.pathmap("#{ENV['HOME']}/.%f")
+    Rake::FileList.new(__dir__ + '/dotfiles/*').each do |source|
+      rm_rf source.pathmap("%{^#{__dir__}/dotfiles/,#{ENV['HOME']}/.}X")
     end
   end
 
   task :bin do
-    Rake::FileList.new(File.expand_path('../bin/*', __FILE__)).each do |source|
-      rm_rf source.pathmap('/usr/local/bin/%f')
+    Rake::FileList.new(__dir__ + '/bin/*').each do |source|
+      rm_rf source.pathmap("%{^#{__dir__},/usr/local}X")
     end
   end
 end
