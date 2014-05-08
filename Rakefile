@@ -15,10 +15,8 @@ namespace :install do
   end
 end
 
-task :install do
-  Rake::Task['install:dotfiles'].invoke
-  Rake::Task['install:bin'].invoke
-end
+task install: %w[install:dotfiles install:bin]
+task default: :install
 
 namespace :uninstall do
   task :dotfiles do
@@ -34,9 +32,4 @@ namespace :uninstall do
   end
 end
 
-task :uninstall do
-  Rake::Task['uninstall:dotfiles'].invoke
-  Rake::Task['uninstall:bin'].invoke
-end
-
-task default: :install
+task uninstall: %w[uninstall:dotfiles uninstall:bin]
