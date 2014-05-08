@@ -1,8 +1,12 @@
 These are config files and commands to set up a system the way I like it.
 
+### ip
+
 ```sh
 $ ip [-e] # Returns current (Wi-fi) IP address or current external IP address.
 ```
+
+### cb
 
 ```sh
 $ cb # Returns clipboard content.
@@ -12,14 +16,15 @@ $ ls | cb # Sets clipboard content.
 ## Installation
 
 ```sh
-$ git clone git://github.com/haihappen/dotfiles.git ~/.dotfiles
-$ cd ~/.dotfiles && rake
+$ git clone git://github.com/haihappen/dotfiles.git ~/.dotfiles; cd ~/.dotfiles
+$ rake install # Or be verbose with RUBYOPT=-w rake install
 ```
 
 You can remove them easily too!
 
 ```sh
-$ cd ~/.dotfiles && rake uninstall
+$ cd ~/.dotfiles
+$ rake uninstall # Or be verbose with RUBYOPT=-w rake uninstall
 $ cd ~ && rm -rf ~/.dotfiles
 ```
 
