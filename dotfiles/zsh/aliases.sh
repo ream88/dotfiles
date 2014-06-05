@@ -39,3 +39,6 @@ ssh() {
   /usr/bin/ssh $*
   tabc
 }
+
+# iOS Simulator
+alias ios='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
