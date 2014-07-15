@@ -52,6 +52,7 @@ export EDITOR=atom
 
 # Paths
 export MYSQL_PATH=/usr/local/var/mysql
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Initialize rbenv
 eval "$(rbenv init -)"
