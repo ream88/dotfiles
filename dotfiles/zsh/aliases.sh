@@ -3,7 +3,6 @@ alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 alias rmdsstores='find ./ -type f | grep .DS_Store | xargs rm'
 alias sleep='pmset sleepnow'
 
-
 # Git
 alias gd='git diff'
 alias gap='git add -p'
@@ -11,7 +10,7 @@ alias glo='git log --oneline'
 
 # Programming
 alias j='jasmine-headless-webkit --color'
-
+alias gulp=gulp --require coffee-script
 
 # Other
 alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
