@@ -16,8 +16,7 @@ $ ls | cb # Sets clipboard content.
 ## Installation
 
 ```sh
-$ cd; git clone git://github.com/haihappen/dotfiles.git; 
-$ rake install # Or be verbose with RUBYOPT=-w rake install
+cd; git clone git://github.com/haihappen/dotfiles.git ~/.dotfiles; source ~/.dotfiles/bootstrap.sh
 ```
 
 
