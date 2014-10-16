@@ -16,6 +16,13 @@ $ ls | cb # Sets clipboard content.
 ## Installation
 
 ```sh
+# Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# oh-my-zsh
+curl -L http://install.ohmyz.sh | sh
+
+# dotfiles
 cd; git clone git://github.com/haihappen/dotfiles.git ~/.dotfiles; source ~/.dotfiles/bootstrap.sh
 ```
 

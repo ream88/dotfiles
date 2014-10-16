@@ -1,0 +1,31 @@
+# Install native apps
+# Usage: `brew bundle Caskfile`
+
+install caskroom/cask/brew-cask
+tap caskroom/versions
+
+tap caskroom/fonts
+
+cask install launchrocket
+cask install chocolat
+cask install imageoptim
+cask install dropbox
+cask install firefox
+cask install google-chrome
+cask install hipchat
+cask install spotify
+cask install tower
+cask install sequel-pro
+cask install team-viewer
+cask install macaw
+cask install ksdiff
+cask install utorrent
+cask install burn
+cask install spectacle
+cask install mongohub
+cask install skype
+cask install vagrant
+cask install mou
+
+cask install font-open-sans
+cask install font-ligature-symbols
