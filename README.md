@@ -16,16 +16,8 @@ $ ls | cb # Sets clipboard content.
 ## Installation
 
 ```sh
-$ git clone git://github.com/haihappen/dotfiles.git ~/.dotfiles; cd ~/.dotfiles
+$ cd; git clone git://github.com/haihappen/dotfiles.git; 
 $ rake install # Or be verbose with RUBYOPT=-w rake install
-```
-
-You can remove them easily too!
-
-```sh
-$ cd ~/.dotfiles
-$ rake uninstall # Or be verbose with RUBYOPT=-w rake uninstall
-$ cd ~ && rm -rf ~/.dotfiles
 ```
 
 
