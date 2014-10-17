@@ -4,8 +4,6 @@
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
-brew tap caskroom/fonts
-
 brew cask install launchrocket
 brew cask install chocolat
 brew cask install imageoptim
@@ -26,6 +24,9 @@ brew cask install mongohub
 brew cask install skype
 brew cask install vagrant
 brew cask install mou
+
+# Fonts
+brew tap caskroom/fonts
 
 brew cask install font-open-sans
 brew cask install font-ligature-symbols
