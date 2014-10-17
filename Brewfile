@@ -1,24 +1,24 @@
 # Install command-line tools using Homebrew
-# Usage: `brew bundle Brewfile`
+# Usage: `source Brewfile`
 
 # Missing utils
-install ack
-install tree
-install gnu-sed
+brew install ack
+brew install tree
+brew install gnu-sed
 
-install git
-install rbenv
-install rbenv-gem-rehash
-install rbenv-vars
-install ruby-build
-install nodejs
+brew install git
+brew install rbenv
+brew install rbenv-gem-rehash
+brew install rbenv-vars
+brew install ruby-build
+brew install nodejs
 
-install pow
-install tunnels
+brew install pow
+brew install tunnels
 
 # Various Databases
-install mysql
-install mongodb
-install postgresql
+brew install mysql
+brew install mongodb
+brew install postgresql
 
-install phantomjs
+brew install phantomjs
