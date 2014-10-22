@@ -24,6 +24,7 @@ brew cask install mongohub
 brew cask install skype
 brew cask install vagrant
 brew cask install mou
+brew cask install vmware-fusion  
 
 # Fonts
 brew tap caskroom/fonts
