@@ -7,6 +7,7 @@ brew install tree
 brew install gnu-sed
 
 brew install git
+brew install hub
 brew install rbenv
 brew install rbenv-gem-rehash
 brew install rbenv-vars
