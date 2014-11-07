@@ -23,3 +23,7 @@ brew install mongodb
 brew install postgresql
 
 brew install phantomjs
+
+# Ruby 1.8.7
+brew tap homebrew/dupes
+brew install apple-gcc42
