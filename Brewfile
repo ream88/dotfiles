@@ -13,6 +13,7 @@ brew install rbenv-gem-rehash
 brew install rbenv-vars
 brew install ruby-build
 brew install nodejs
+brew install imagemagick
 
 brew install pow
 brew install tunnels
