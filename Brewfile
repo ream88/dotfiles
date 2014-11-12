@@ -24,6 +24,7 @@ brew install mongodb
 brew install postgresql
 
 brew install phantomjs
+brew install pngquant
 
 # Ruby 1.8.7
 brew tap homebrew/dupes
