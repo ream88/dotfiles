@@ -42,7 +42,7 @@ unsetopt correct_all
 setopt correct
 
 # Autocomplete path, so `cd rails` jumpts to `~/Code/Other/rails`
-cdpath=(. ~ ~/Code ~/Code/*)
+cdpath=(. ~ ~/Code ~/Code/bee ~/Code/*)
 
 # Customize to your needs...
 export PATH=/Users/mario/.rbenv/shims:/Users/mario/.rbenv/bin:/Users/mario/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/sbin:/usr/local/share/npm/bin
