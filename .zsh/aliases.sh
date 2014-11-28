@@ -41,6 +41,3 @@ ssh() {
 
 # iOS Simulator
 alias ios='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
-
-# Static webserver
-alias s='ruby -run -ehttpd . -p8000'
