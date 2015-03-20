@@ -41,3 +41,6 @@ ssh() {
 
 # iOS Simulator
 alias ios='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
+
+# Docker Machine
+alias machine='docker-machine'
