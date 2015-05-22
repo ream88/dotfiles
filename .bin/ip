@@ -13,6 +13,6 @@ Returns the current Wi-fi IP address.
   curl -s http://icanhazip.com
   ;;
 *)
-  ipconfig getifaddr en1
+  ipconfig getifaddr en0
   ;;
 esac
