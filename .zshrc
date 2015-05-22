@@ -48,7 +48,7 @@ cdpath=(. ~ ~/Code ~/Code/bee ~/Code/*)
 export PATH=/Users/mario/.rbenv/shims:/Users/mario/.rbenv/bin:/Users/mario/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/sbin:/usr/local/share/npm/bin
 
 # Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
-export EDITOR=choc
+export EDITOR=atom
 
 # Paths
 export MYSQL_PATH=/usr/local/var/mysql
