@@ -46,9 +46,6 @@ source $HOME/.zsh/aliases.sh
 # Don't cd without `cd` ;)
 unsetopt autocd
 
-# Dont share history across tabs, very annoying!
-unsetopt sharehistory
-
 # Dont correct arguments
 unsetopt correct_all
 setopt correct
