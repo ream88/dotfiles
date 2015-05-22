@@ -1,17 +1,10 @@
 # OS X shortcuts
-alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 alias rmdsstores='find ./ -type f | grep .DS_Store | xargs rm'
-alias sleep='pmset sleepnow'
 
 # Git
 alias gd='git diff'
 alias gap='git add -p'
 alias glo='git log --oneline'
-
-# Quick way to rebuild the Launch Services database and get rid
-# of duplicates in the Open With submenu.
-alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
-alias updatedb='sudo /usr/libexec/locate.updatedb'
 
 # gt is alias for gittower .
 gt() {
