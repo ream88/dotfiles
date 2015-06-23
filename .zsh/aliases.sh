@@ -31,3 +31,4 @@ alias ios='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.
 # Docker
 alias machine='docker-machine'
 alias compose='docker-compose'
+alias swarm='docker-swarm'
