@@ -30,6 +30,8 @@ plugins=(
   brew
   brew-cask
   bundler
+  docker
+  docker-compose
   git
   grunt
   heroku
