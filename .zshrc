@@ -32,6 +32,7 @@ plugins=(
   bundler
   docker
   docker-compose
+  gem
   git
   grunt
   heroku
