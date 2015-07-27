@@ -40,6 +40,7 @@ plugins=(
   powder
   rails
   rake-fast
+  tugboat
 )
 
 source $ZSH/oh-my-zsh.sh
