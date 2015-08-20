@@ -29,7 +29,6 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
   brew
   brew-cask
-  bundler
   docker
   docker-compose
   gem
