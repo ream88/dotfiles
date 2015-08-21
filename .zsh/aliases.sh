@@ -32,3 +32,6 @@ alias ios='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.
 alias machine='docker-machine'
 alias compose='docker-compose'
 alias swarm='docker-swarm'
+
+alias bu='bundle update'
+alias bl='bundle list'
