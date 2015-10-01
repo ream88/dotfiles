@@ -5,6 +5,7 @@ alias rmdsstores='find ./ -type f | grep .DS_Store | xargs rm'
 alias gd='git diff'
 alias gap='git add -p'
 alias glo='git log --oneline'
+alias gu='gitup'
 
 # gt is alias for gittower .
 gt() {
