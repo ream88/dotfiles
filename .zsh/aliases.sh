@@ -1,5 +1,6 @@
 # OS X shortcuts
 alias rmdsstores='find ./ -type f | grep .DS_Store | xargs rm'
+alias rm=trash # brew install trash
 
 # Git
 alias gd='git diff'
