@@ -4,3 +4,4 @@
 .rake_tasks
 .rbenv-version
 .ruby-version
+.zsh/ENV.sh
