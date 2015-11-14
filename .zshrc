@@ -70,7 +70,8 @@ export PATH=\
 /sbin:\
 /usr/X11/bin:\
 /usr/local/sbin:\
-/usr/local/share/npm/bin
+/usr/local/share/npm/bin:\
+/Users/mario/.composer/vendor/bin
 
 # Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
 export EDITOR=atom
