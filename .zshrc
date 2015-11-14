@@ -58,7 +58,19 @@ setopt correct
 cdpath=(. ~ ~/Code ~/Code/bee ~/Code/*)
 
 # Customize to your needs...
-export PATH=/Users/mario/.rbenv/shims:/Users/mario/.rbenv/bin:/Users/mario/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/sbin:/usr/local/share/npm/bin
+export PATH=\
+/usr/local/heroku/bin:\
+/Users/mario/.rbenv/shims:\
+/Users/mario/.rbenv/bin:\
+/Users/mario/.bin:\
+/usr/local/bin:\
+/usr/bin:\
+/bin:\
+/usr/sbin:\
+/sbin:\
+/usr/X11/bin:\
+/usr/local/sbin:\
+/usr/local/share/npm/bin
 
 # Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
 export EDITOR=atom
@@ -69,9 +81,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Initialize rbenv
 eval "$(rbenv init -)"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
