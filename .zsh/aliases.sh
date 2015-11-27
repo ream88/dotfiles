@@ -4,8 +4,6 @@ alias rm=trash # brew install trash
 
 # Git
 alias gd='git diff'
-alias gap='git add -p'
-alias glo='git log --oneline'
 alias gu='gitup'
 
 # gt is alias for gittower .
