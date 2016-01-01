@@ -8,10 +8,6 @@ brew install gnu-sed
 
 brew install git
 brew install hub
-brew install rbenv
-brew install rbenv-gem-rehash
-brew install rbenv-vars
-brew install ruby-build
 brew install nodejs
 brew install imagemagick
 

@@ -60,8 +60,6 @@ cdpath=(. ~ ~/Code ~/Code/bee ~/Code/*)
 # Customize to your needs...
 export PATH=\
 /usr/local/heroku/bin:\
-/Users/mario/.rbenv/shims:\
-/Users/mario/.rbenv/bin:\
 /Users/mario/.bin:\
 /usr/local/bin:\
 /usr/bin:\
@@ -80,11 +78,11 @@ export EDITOR=atom
 export MYSQL_PATH=/usr/local/var/mysql
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-# Initialize rbenv
-eval "$(rbenv init -)"
-
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # Wildcard search
 bindkey '^R' history-incremental-pattern-search-backward
