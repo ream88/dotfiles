@@ -31,6 +31,7 @@
 	unstage = reset HEAD
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s" --decorate
 	up = "!git remote update -p; git merge --ff-only @{u}"
+	latest = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 [push]
 	default = current
 [difftool "Kaleidoscope"]
