@@ -88,3 +88,6 @@ chruby ruby-2.3.0
 # Wildcard search
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey '^S' history-incremental-pattern-search-forward
+
+# added by travis gem
+[ -f /Users/mario/.travis/travis.sh ] && source /Users/mario/.travis/travis.sh
