@@ -41,7 +41,11 @@ plugins=(
   rails
   rake-fast
   tugboat
+
+  zsh-syntax-highlighting
 )
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(brackets)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh/aliases.sh
