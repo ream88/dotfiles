@@ -1,6 +1,7 @@
 [user]
 	name = Mario Uher
 	email = uher.mario@gmail.com
+	signingkey = 75B3D888
 [github]
 	user = haihappen
 [apply]
@@ -51,3 +52,5 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[commit]
+	gpgsign = true

@@ -95,3 +95,6 @@ bindkey '^S' history-incremental-pattern-search-forward
 
 # added by travis gem
 [ -f /Users/mario/.travis/travis.sh ] && source /Users/mario/.travis/travis.sh
+
+# Use gpg-agent for git rebase and so own. Be sure to have use-agent config set properly.
+export GPG_TTY=$(tty)
