@@ -1,4 +1,5 @@
 --type-add=css=.scss,.sass,.less
 --type-add=js=.coffee
---ignore-dir=.bundle
+--ignore-dir=.bundle,log,tmp
 --nopager
+--smart-case
