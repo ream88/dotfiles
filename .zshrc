@@ -47,6 +47,8 @@ plugins=(
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(brackets)
 
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh/aliases.sh
 source $HOME/.zsh/ENV.sh
