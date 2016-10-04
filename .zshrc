@@ -42,12 +42,11 @@ plugins=(
   rake-fast
   tugboat
 
+  zsh-completions
   zsh-syntax-highlighting
 )
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(brackets)
-
-fpath=(/usr/local/share/zsh-completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh/aliases.sh
