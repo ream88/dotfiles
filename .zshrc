@@ -88,7 +88,7 @@ source $(brew --prefix nvm)/nvm.sh
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby ruby-2.3.0
+chruby ruby-2.3.1
 
 # Wildcard search
 bindkey '^R' history-incremental-pattern-search-backward
