@@ -33,6 +33,11 @@
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s" --decorate
 	up = "!git remote update -p; git merge --ff-only @{u}"
 	latest = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+	stsh = stash --keep-index
+	staash = stash --include-untracked
+	staaash = stash --all
+	it = !git init && git commit -m 'Git init' --allow-empty
+	commend = commit --amend --no-edit
 [push]
 	default = current
 [difftool "Kaleidoscope"]
