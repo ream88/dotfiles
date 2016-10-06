@@ -60,7 +60,7 @@ unsetopt correct_all
 setopt correct
 
 # Autocomplete path, so `cd rails` jumpts to `~/Code/Other/rails`
-cdpath=(. ~ ~/Code/*)
+cdpath=(. ~ ~/Code/ ~/Code/*)
 
 # Customize to your needs...
 export PATH=\
