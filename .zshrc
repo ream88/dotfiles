@@ -57,7 +57,7 @@ source $HOME/.zsh/ENV.sh
 # Don't cd without `cd` ;)
 unsetopt autocd
 
-# Dont correct arguments
+# Don't correct arguments
 unsetopt correct_all
 setopt correct
 
