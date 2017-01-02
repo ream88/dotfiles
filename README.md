@@ -39,6 +39,6 @@ cp DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 (The MIT license)
 
-Copyright (c) 2012-2016 Mario Uher
+Copyright (c) 2012-2017 Mario Uher
 
 See [LICENSE.md](LICENSE.md).
