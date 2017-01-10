@@ -23,7 +23,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 curl -L http://install.ohmyz.sh | sh
 
 # dotfiles
-cd; git clone git://github.com/haihappen/dotfiles.git ~/.dotfiles; source ~/.dotfiles/bootstrap.sh
+cd; git clone git://github.com/ream88/dotfiles.git ~/.dotfiles; source ~/.dotfiles/bootstrap.sh
 ```
 
 # Fix non-breaking spaces in Terminal:
