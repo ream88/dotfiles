@@ -55,9 +55,6 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh/aliases.sh
 source $HOME/.zsh/ENV.sh
 
-# Don't cd without `cd` ;)
-unsetopt autocd
-
 # Don't correct arguments
 unsetopt correct_all
 setopt correct
