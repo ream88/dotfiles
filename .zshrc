@@ -34,13 +34,11 @@ plugins=(
   elm
   gem
   git
-  grunt
   heroku
   npm
   osx
   rails
   rake-fast
-  tugboat
 
   zsh-completions
   zsh-syntax-highlighting
