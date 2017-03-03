@@ -6,8 +6,8 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #
-# Custom theme: https://github.com/haihappen/haihappen.zsh-theme
-ZSH_THEME="haihappen"
+# Custom theme: https://github.com/ream88/ream88.zsh-theme
+ZSH_THEME="ream88"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
