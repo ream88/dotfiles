@@ -1,6 +1,5 @@
 .bundle
 .DS_Store
-.powenv
 .rake_tasks
 .ruby-version
 .zsh/ENV.sh

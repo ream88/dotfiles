@@ -38,7 +38,6 @@ plugins=(
   heroku
   npm
   osx
-  powder
   rails
   rake-fast
   tugboat
