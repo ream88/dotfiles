@@ -54,7 +54,7 @@ unsetopt correct_all
 setopt correct
 
 # Autocomplete path, so `cd rails` jumpts to `~/Code/Other/rails`
-cdpath=(. ~ ~/Code/ ~/Code/*)
+cdpath=(. ~ ~/Code/ ~/Code/* ~/Code/yodel/monorepo/)
 
 # Customize to your needs...
 export PATH=\
