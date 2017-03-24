@@ -41,10 +41,7 @@ plugins=(
   rake-fast
 
   zsh-completions
-  zsh-syntax-highlighting
 )
-
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(brackets)
 
 autoload -U compinit && compinit
 
