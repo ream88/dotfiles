@@ -37,7 +37,6 @@ plugins=(
   heroku
   npm
   osx
-  rails
   rake-fast
 
   zsh-completions
