@@ -1,66 +1,8 @@
-[user]
-	name = Mario Uher
-	email = uher.mario@gmail.com
-	signingkey = 75B3D888
-[github]
-	user = ream88
-[apply]
-	whitespace = nowarn
-[core]
-	excludesfile = /Users/mario/.gitignore
-	quotepath = false
-	whitespace = -blank-at-eol
-	editor = vim
-[color]
-	branch = auto
-	diff = auto
-	status = auto
-[color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
-[color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
-[color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
 [alias]
 	unstage = reset HEAD
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s" --decorate
-	up = "!git remote update -p; git merge --ff-only @{u}"
-	latest = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
-	stsh = stash --keep-index
-	staash = stash --include-untracked
-	staaash = stash --all
 	it = !git init && git commit -m 'Git init' --allow-empty
-	commend = commit --amend --no-edit
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[diff]
-	tool = Kaleidoscope
-[difftool]
-	prompt = false
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[mergetool]
-	prompt = false
-	keepBackup = true
-[merge]
-	tool = Kaleidoscope
-[filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
-[commit]
-	gpgsign = true
-[credential]
-	helper = osxkeychain
 
-[alias]
 	prune = fetch --prune
 	# Because I constantly forget how to do this
 	# https://git-scm.com/docs/git-fetch#git-fetch--p
@@ -78,7 +20,64 @@
 	# https://git-scm.com/docs/git-log
 	# via https://medium.com/@payload.dd/thanks-for-the-git-st-i-will-use-this-4da5839a21a4
 
+[apply]
+	whitespace = nowarn
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+
+[commit]
+	gpgSign = true
+	# "other people can trust that the changes you've made really were made by you"
+	# https://help.github.com/articles/about-gpg/
+	# https://git-scm.com/docs/git-config#git-config-commitgpgSign
+
+[core]
+	excludesfile = /Users/mario/.gitignore
+	quotepath = false
+	whitespace = -blank-at-eol
+	editor = vim
+
+[credential]
+	helper = osxkeychain
+
+[diff]
+	tool = Kaleidoscope
+
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[difftool]
+	prompt = false
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+
+[github]
+	user = ream88
+
 [merge]
+	tool = Kaleidoscope
+
 	ff = only
 	# I pretty much never mean to do a real merge, since I use a rebase workflow.
 	# Note: this global option applies to all merges, including those done during a git pull
@@ -88,11 +87,13 @@
 	# Standard diff is two sets of final changes. This introduces the original text before each side's changes.
 	# https://git-scm.com/docs/git-config#git-config-mergeconflictStyle
 
-[commit]
-	gpgSign = true
-	# "other people can trust that the changes you've made really were made by you"
-	# https://help.github.com/articles/about-gpg/
-	# https://git-scm.com/docs/git-config#git-config-commitgpgSign
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+
+[mergetool]
+	prompt = false
+	keepBackup = true
 
 [push]
 	default = simple
@@ -115,3 +116,8 @@
 	# Note: this global option applies during receive and transmit
 	# https://git-scm.com/docs/git-config#git-config-transferfsckObjects
 	# via https://groups.google.com/forum/#!topic/binary-transparency/f-BI4o8HZW0
+
+[user]
+	name = Mario Uher
+	email = uher.mario@gmail.com
+	signingkey = 75B3D888
