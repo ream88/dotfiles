@@ -97,7 +97,7 @@
 
 [push]
 	followTags = true
-	default = upstream
+	default = current
 	# Because I get sick of telling git to do it manually
 	# https://git-scm.com/docs/git-config#git-config-pushfollowTags
 
