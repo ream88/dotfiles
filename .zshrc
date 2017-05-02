@@ -90,4 +90,3 @@ bindkey '^S' history-incremental-pattern-search-forward
 
 # Use gpg-agent for git rebase and so on. Be sure to have use-agent config set properly.
 export GPG_TTY=$(tty)
-eval $(gpg-agent --daemon)
