@@ -3,7 +3,6 @@ alias rmdsstores='find ./ -type f | grep .DS_Store | xargs rm'
 alias rm=trash # brew install trash
 
 # Git
-alias git=hub
 alias gd='git diff'
 alias gu='gitup'
 
