@@ -67,7 +67,9 @@ export PATH=\
 /usr/X11/bin:\
 /usr/local/sbin:\
 /usr/local/share/npm/bin:\
-/usr/local/opt/postgresql@9.4/bin
+/usr/local/opt/postgresql@9.4/bin:\
+/usr/local/opt/go/libexec/bin:\
+/Users/mario/.go/bin
 
 # Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
 export EDITOR=atom
@@ -75,6 +77,7 @@ export EDITOR=atom
 # Paths
 export MYSQL_PATH=/usr/local/var/mysql
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export GOPATH="/Users/mario/.go"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
