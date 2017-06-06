@@ -35,6 +35,7 @@ plugins=(
   gem
   git
   heroku
+  mix
   npm
   osx
   rake-fast
