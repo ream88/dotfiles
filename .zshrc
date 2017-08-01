@@ -31,6 +31,7 @@ plugins=(
   brew-cask
   docker
   docker-compose
+  dotenv
   elm
   gem
   git
