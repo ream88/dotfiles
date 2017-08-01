@@ -98,3 +98,5 @@ bindkey '^S' history-incremental-pattern-search-forward
 export GPG_TTY=$(tty)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export ERL_AFLAGS="-kernel shell_history enabled"
