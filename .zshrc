@@ -81,9 +81,6 @@ export MYSQL_PATH=/usr/local/var/mysql
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export GOPATH="/Users/mario/.go"
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
