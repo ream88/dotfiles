@@ -97,3 +97,10 @@ export GPG_TTY=$(tty)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/sls.zsh
