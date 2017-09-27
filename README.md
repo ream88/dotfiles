@@ -2,15 +2,25 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
 
 ## Installation
 
+### Homebrew
 ```sh
-# Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
-# oh-my-zsh
+### oh-my-zsh and custom theme
+```sh
 curl -L http://install.ohmyz.sh | sh
+curl -L https://raw.githubusercontent.com/ream88/ream88.zsh-theme/master/ream88.zsh-theme > ~/.oh-my-zsh/themes/ream88.zsh-theme
+```
 
-# dotfiles
+### dotfiles
+```sh
 cd; git clone git://github.com/ream88/dotfiles.git ~/.dotfiles; source ~/.dotfiles/bootstrap.sh
+```
+
+### gpg (for [signing commits](https://help.github.com/articles/generating-a-new-gpg-key/)) and chruby
+```sh
+brew install gpg chruby
 ```
 
 ## Copyright
