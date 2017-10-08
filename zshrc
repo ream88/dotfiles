@@ -80,8 +80,10 @@ export MYSQL_PATH=/usr/local/var/mysql
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export GOPATH="/Users/mario/.go"
 
+# Ruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
+chruby 2.4.0
 
 # Wildcard search
 bindkey '^R' history-incremental-pattern-search-backward
