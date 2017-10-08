@@ -15,7 +15,7 @@ curl -L https://raw.githubusercontent.com/ream88/ream88.zsh-theme/master/ream88.
 
 ### dotfiles
 ```sh
-cd; git clone git://github.com/ream88/dotfiles.git ~/.dotfiles; source ~/.dotfiles/bootstrap.sh
+cd; git clone git://github.com/ream88/dotfiles.git ~/.dotfiles; ruby ~/.dotfiles/bootstrap.rb
 ```
 
 ### gpg (for [signing commits](https://help.github.com/articles/generating-a-new-gpg-key/)) and chruby
