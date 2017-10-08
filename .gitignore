@@ -3,3 +3,4 @@
 .rake_tasks
 .ruby-version
 .zsh/ENV.sh
+vim/pack/*
