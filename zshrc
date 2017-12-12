@@ -76,7 +76,6 @@ export PATH=\
 export EDITOR=atom
 
 # Paths
-export MYSQL_PATH=/usr/local/var/mysql
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export GOPATH="/Users/mario/.go"
 
