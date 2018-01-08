@@ -79,11 +79,6 @@ export EDITOR=atom
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export GOPATH="/Users/mario/.go"
 
-# Ruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby 2.4.0
-
 # Wildcard search
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey '^S' history-incremental-pattern-search-forward
@@ -104,3 +99,6 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/sls.zsh
+
+# asdf
+source /usr/local/opt/asdf/asdf.sh
