@@ -6,6 +6,7 @@ alias rm=trash # brew install trash
 alias gd='git diff'
 alias gu='gitup'
 alias git-delete-squashed='git checkout -q master && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done'
+alias gpu='git push -u'
 
 # gt is alias for gittower .
 gt() {
