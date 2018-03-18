@@ -37,3 +37,7 @@ alias swarm='docker-swarm'
 
 alias bu='bundle update'
 alias bl='bundle list'
+
+evalenv() {
+  eval $(awk '{printf "export %s\n", $0}' .env)
+}
