@@ -37,5 +37,3 @@ alias swarm='docker-swarm'
 
 alias bu='bundle update'
 alias bl='bundle list'
-
-alias hangout='open helium://plus.google.com/hangouts/_/beenetwork.eu/7s-developer'
