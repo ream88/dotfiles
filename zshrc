@@ -102,3 +102,7 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 # asdf
 source /usr/local/opt/asdf/asdf.sh
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
