@@ -106,3 +106,6 @@ source /usr/local/opt/asdf/asdf.sh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/mario/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
