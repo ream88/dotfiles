@@ -68,9 +68,9 @@ export PATH=\
 /usr/X11/bin:\
 /usr/local/sbin:\
 /usr/local/share/npm/bin:\
-/usr/local/opt/postgresql@9.4/bin:\
 /usr/local/opt/go/libexec/bin:\
-/Users/mario/.go/bin
+/Users/mario/.go/bin:\
+/Users/mario/.local/bin
 
 # Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
 export EDITOR=atom
