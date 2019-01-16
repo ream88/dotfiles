@@ -41,3 +41,5 @@ alias bl='bundle list'
 evalenv() {
   eval $(awk '{printf "export %s\n", $0}' .env)
 }
+
+alias y='/Users/mario/Code/yodel/yodel/yodel.sh'
