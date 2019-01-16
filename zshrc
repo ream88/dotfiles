@@ -102,7 +102,8 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 [[ -f /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/sls.zsh
 
 # asdf
-source /usr/local/opt/asdf/asdf.sh
+source /Users/mario/.asdf/asdf.sh
+source /Users/mario/.asdf/completions/asdf.bash
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
