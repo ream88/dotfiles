@@ -52,6 +52,7 @@ source $HOME/.zsh/aliases.sh
 # Don't correct arguments
 unsetopt correct_all
 setopt correct
+#setopt extended_glob
 
 # Autocomplete path, so `cd rails` jumpts to `~/Code/Other/rails`
 cdpath=(. ~ ~/Code/ ~/Code/* ~/Code/yodel/yodel/)
