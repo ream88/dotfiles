@@ -119,3 +119,5 @@
 	signingkey = 75B3D888
 [gpg]
 	program = /usr/local/bin/gpg
+[fetch]
+	fsckobjects = false
