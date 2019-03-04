@@ -37,7 +37,11 @@ alias bu='bundle update'
 alias bl='bundle list'
 
 evalenv() {
-  eval $(awk '{printf "export %s\n", $0}' .env)
+  if [ "$1" != "" ]; then
+    eval $(awk '{printf "export %s\n", $0}' $1)
+  else
+    eval $(awk '{printf "export %s\n", $0}' .env)
+  fi
 }
 
 alias y='/Users/mario/Code/yodel/yodel/yodel.sh'
