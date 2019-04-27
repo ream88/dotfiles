@@ -27,21 +27,21 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
-  brew
-  brew-cask
-  docker
-  docker-compose
-  dotenv
-  elm
-  gem
-  git
-  heroku
-  mix
-  npm
-  osx
-  rake-fast
-
-  zsh-completions
+    brew
+    brew-cask
+    docker
+    docker-compose
+    dotenv
+    elm
+    gem
+    git
+    heroku
+    mix
+    npm
+    osx
+    rake-fast
+    
+    zsh-completions
 )
 
 autoload -U compinit && compinit

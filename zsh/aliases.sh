@@ -10,21 +10,21 @@ alias gpu='git push -u'
 
 # gt is alias for gittower .
 gt() {
-  DIR="${1:-.}"
-  gittower "$DIR"
+    DIR="${1:-.}"
+    gittower "$DIR"
 }
 
 # Change theme of Terminal.app
 tabc() {
-  NAME="${1:-Default}"
-  osascript -e "tell application \"Terminal\" to set current settings of front window to settings set \"$NAME\""
+    NAME="${1:-Default}"
+    osascript -e "tell application \"Terminal\" to set current settings of front window to settings set \"$NAME\""
 }
 
 # Change to Danger theme when executing ssh
 ssh() {
-  tabc Danger
-  /usr/bin/ssh $*
-  tabc
+    tabc Danger
+    /usr/bin/ssh $*
+    tabc
 }
 
 # Docker
@@ -37,11 +37,11 @@ alias bu='bundle update'
 alias bl='bundle list'
 
 evalenv() {
-  if [ "$1" != "" ]; then
-    eval $(awk '{printf "export %s\n", $0}' $1)
-  else
-    eval $(awk '{printf "export %s\n", $0}' .env)
-  fi
+    if [ "$1" != "" ]; then
+        eval $(awk '{printf "export %s\n", $0}' $1)
+    else
+        eval $(awk '{printf "export %s\n", $0}' .env)
+    fi
 }
 
 alias y='/Users/mario/Code/yodel/yodel/yodel.sh'
