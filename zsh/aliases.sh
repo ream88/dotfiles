@@ -10,8 +10,7 @@ alias gpu='git push -u'
 
 # gt is alias for gittower .
 gt() {
-    DIR="${1:-.}"
-    gittower "$DIR"
+    gittower $(git rev-parse --show-toplevel)
 }
 
 # Change theme of Terminal.app
