@@ -28,11 +28,9 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
     brew
-    brew-cask
     docker
     docker-compose
     dotenv
-    elm
     gem
     git
     heroku
@@ -40,8 +38,6 @@ plugins=(
     npm
     osx
     rake-fast
-    
-    zsh-completions
 )
 
 autoload -U compinit && compinit
