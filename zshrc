@@ -30,14 +30,12 @@ plugins=(
     brew
     docker
     docker-compose
-    dotenv
     gem
     git
     heroku
     mix
     npm
     osx
-    rake-fast
 )
 
 autoload -U compinit && compinit
