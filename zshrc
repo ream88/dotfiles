@@ -59,6 +59,9 @@ cdpath=(. ~ ~/Code/ ~/Code/* ~/Code/yodel/yodel/)
 
 # Customize to your needs...
 export PATH=\
+/usr/local/opt/binutils/bin:\
+/usr/local/opt/go/libexec/bin:\
+/usr/local/opt/gnu-sed/libexec/gnubin:\
 /usr/local/heroku/bin:\
 /Users/mario/.bin:\
 /usr/local/bin:\
@@ -69,7 +72,6 @@ export PATH=\
 /usr/X11/bin:\
 /usr/local/sbin:\
 /usr/local/share/npm/bin:\
-/usr/local/opt/go/libexec/bin:\
 /Users/mario/.go/bin:\
 /Users/mario/.local/bin
 
