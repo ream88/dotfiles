@@ -51,59 +51,21 @@ setopt correct
 # Autocomplete path, so `cd rails` jumpts to `~/Code/Other/rails`
 cdpath=(. ~ ~/Code/ ~/Code/* ~/Code/yodel/yodel/)
 
-# Customize to your needs...
-export PATH=\
-/usr/local/opt/binutils/bin:\
-/usr/local/opt/go/libexec/bin:\
-/usr/local/opt/gnu-sed/libexec/gnubin:\
-/usr/local/heroku/bin:\
-/Users/mario/.bin:\
-/usr/local/bin:\
-/usr/bin:\
-/bin:\
-/usr/sbin:\
-/sbin:\
-/usr/X11/bin:\
-/usr/local/sbin:\
-/usr/local/share/npm/bin:\
-/Users/mario/.go/bin:\
-/Users/mario/.local/bin
-
 # Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
-export EDITOR=atom
+export EDITOR=code
 
 # Paths
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export GOPATH="/Users/mario/.go"
 
 # Wildcard search
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey '^S' history-incremental-pattern-search-forward
 
-# added by travis gem
-[ -f /Users/mario/.travis/travis.sh ] && source /Users/mario/.travis/travis.sh
-
 # Use gpg-agent for git rebase and so on. Be sure to have use-agent config set properly.
 export GPG_TTY=$(tty)
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 export ERL_AFLAGS="-kernel shell_history enabled"
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/mario/Code/Other/elm-serverless/node_modules/tabtab/.completions/sls.zsh
 
 # asdf
 source /Users/mario/.asdf/asdf.sh
 source /Users/mario/.asdf/completions/asdf.bash
-
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8
-
-# heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=/Users/mario/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
