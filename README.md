@@ -25,8 +25,4 @@ brew install gpg chruby
 
 ## Copyright
 
-(The MIT license)
-
-Copyright (c) 2012-2017 Mario Uher
-
-See [LICENSE.md](LICENSE.md).
+See [LICENSE.md (The MIT license)](LICENSE.md).
