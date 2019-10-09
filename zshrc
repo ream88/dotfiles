@@ -68,5 +68,5 @@ export GPG_TTY=$(tty)
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 # asdf
-source /Users/mario/.asdf/asdf.sh
-source /Users/mario/.asdf/completions/asdf.bash
+source /usr/local/opt/asdf/asdf.sh
+source /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
