@@ -4,5 +4,5 @@
 
 ```sh
 mkdir -p ~/Library/KeyBindings
-cp DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
+cp ~/.dotfiles/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 ```
