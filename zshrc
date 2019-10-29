@@ -55,7 +55,7 @@ cdpath=(. ~ ~/Code/ ~/Code/* ~/Code/yodel/yodel/)
 export EDITOR=code
 
 # Paths
-export PATH="$PATH:/Users/mario/.bin"
+export PATH="/usr/local/opt/binutils/bin:$PATH:/Users/mario/.bin:$HOME/.fastlane/bin"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Wildcard search
