@@ -14,13 +14,13 @@ gt() {
 
 # Change theme of Terminal.app
 tabc() {
-    NAME="${1:-Default}"
+    NAME="${1:-Basic}"
     osascript -e "tell application \"Terminal\" to set current settings of front window to settings set \"$NAME\""
 }
 
 # Change to Danger theme when executing ssh
 ssh() {
-    tabc Danger
+    tabc Pro
     /usr/bin/ssh $*
     tabc
 }
