@@ -45,7 +45,7 @@
 	status = auto
 
 [commit]
-	gpgSign = true
+	gpgsign = true
 	# "other people can trust that the changes you've made really were made by you"
 	# https://help.github.com/articles/about-gpg/
 	# https://git-scm.com/docs/git-config#git-config-commitgpgSign
@@ -117,7 +117,6 @@
 	name = Mario Uher
 	email = uher.mario@gmail.com
 	signingkey = 75B3D888
-[gpg]
-	program = /usr/local/bin/gpg
+
 [fetch]
 	fsckobjects = false
