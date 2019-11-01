@@ -39,5 +39,3 @@ evalenv() {
         eval $(awk '{printf "export %s\n", $0}' .env)
     fi
 }
-
-alias y='/Users/mario/Code/yodel/yodel/yodel.sh'
