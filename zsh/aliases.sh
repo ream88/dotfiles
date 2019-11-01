@@ -26,9 +26,7 @@ ssh() {
 }
 
 # Docker
-alias machine='docker-machine'
 alias compose='docker-compose'
-alias swarm='docker-swarm'
 alias test-compose='compose -f /Users/mario/Code/yodel/yodel/docker-compose.test.yml'
 
 alias bu='bundle update'
