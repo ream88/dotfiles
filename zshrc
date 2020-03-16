@@ -70,3 +70,6 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 # asdf
 source /usr/local/opt/asdf/asdf.sh
 source /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+
+# https://github.com/nvbn/thefuck
+eval $(thefuck --alias)
