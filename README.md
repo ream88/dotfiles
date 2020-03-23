@@ -18,9 +18,9 @@ curl -L https://raw.githubusercontent.com/ream88/ream88.zsh-theme/master/ream88.
 cd; git clone git://github.com/ream88/dotfiles.git ~/.dotfiles; cd ~/.dotfiles; ruby bootstrap.rb
 ```
 
-### gpg (for [signing commits](https://help.github.com/articles/generating-a-new-gpg-key/)) and chruby
+### gpg (for [signing commits](https://help.github.com/articles/generating-a-new-gpg-key/))
 ```sh
-brew install gpg chruby
+brew install gpg
 ```
 
 ## Copyright
