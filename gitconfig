@@ -120,3 +120,5 @@
 
 [fetch]
 	fsckobjects = false
+[gpg]
+	program = /usr/local/bin/gpg
