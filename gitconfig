@@ -23,6 +23,11 @@
 [apply]
 	whitespace = nowarn
 
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -38,11 +43,6 @@
 	added = yellow
 	changed = green
 	untracked = cyan
-
-[color]
-	branch = auto
-	diff = auto
-	status = auto
 
 [commit]
 	gpgsign = true
@@ -62,11 +62,14 @@
 [diff]
 	tool = Kaleidoscope
 
+[difftool]
+	prompt = false
+
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
-[difftool]
-	prompt = false
+[fetch]
+	fsckobjects = false
 
 [filter "media"]
 	clean = git-media-clean %f
@@ -74,6 +77,9 @@
 
 [github]
 	user = ream88
+
+[gpg]
+	program = /usr/local/bin/gpg
 
 [merge]
 	tool = Kaleidoscope
@@ -87,13 +93,13 @@
 	# Standard diff is two sets of final changes. This introduces the original text before each side's changes.
 	# https://git-scm.com/docs/git-config#git-config-mergeconflictStyle
 
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-
 [mergetool]
 	prompt = false
 	keepBackup = true
+
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
 
 [push]
 	followTags = true
@@ -117,8 +123,3 @@
 	name = Mario Uher
 	email = uher.mario@gmail.com
 	signingkey = 75B3D888
-
-[fetch]
-	fsckobjects = false
-[gpg]
-	program = /usr/local/bin/gpg
