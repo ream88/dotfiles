@@ -2,7 +2,7 @@
 exclude = Regexp.union(
   '.DS_Store',
   /\.md$/,
-  'bootstrap.rb',
+  'install.rb',
   'DefaultKeyBinding.dict'
 )
 
