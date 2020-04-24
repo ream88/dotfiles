@@ -20,8 +20,10 @@ cd; git clone git://github.com/ream88/dotfiles.git ~/.dotfiles; cd ~/.dotfiles; 
 
 ### gpg (for [signing commits](https://help.github.com/articles/generating-a-new-gpg-key/))
 ```sh
-brew install gpg
+brew install gpg pinentry-mac
 ```
+
+This also helped: https://stackoverflow.com/a/55646458/326984
 
 ## Copyright
 

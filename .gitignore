@@ -4,3 +4,5 @@
 .ruby-version
 .zsh/ENV.sh
 vim/pack/*
+gnupg/*
+!gnupg/*.conf
