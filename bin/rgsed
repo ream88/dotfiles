@@ -1,6 +1,0 @@
-#!/bin/sh
-
-replace=$1
-replacement=$2
-
-rg "$replace" --files-with-matches | xargs sed -i '' "s/$replace/$replacement/g"
