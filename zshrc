@@ -1,6 +1,10 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+# Paths
+export PATH="/opt/homebrew/bin:$PATH:/Users/mario/.bin"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -27,6 +31,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
+    asdf
     brew
     docker
     docker-compose
@@ -54,10 +59,6 @@ cdpath=(. ~ ~/Code/ ~/Code/* ~/Code/yodel/yodel/)
 # Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
 export EDITOR=code
 
-# Paths
-export PATH="/usr/local/opt/binutils/bin:$PATH:/Users/mario/.bin:$HOME/.fastlane/bin"
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
 # Wildcard search
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey '^S' history-incremental-pattern-search-forward
@@ -66,10 +67,6 @@ bindkey '^S' history-incremental-pattern-search-forward
 export GPG_TTY=$(tty)
 
 export ERL_AFLAGS="-kernel shell_history enabled"
-
-# asdf
-source /usr/local/opt/asdf/asdf.sh
-source /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 
 # https://github.com/nvbn/thefuck
 eval $(thefuck --alias)

@@ -79,7 +79,7 @@
 	user = ream88
 
 [gpg]
-	program = /usr/local/bin/gpg
+	program = /opt/homebrew/bin/gpg
 
 [merge]
 	tool = Kaleidoscope
