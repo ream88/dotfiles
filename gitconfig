@@ -2,6 +2,8 @@
 	unstage = reset HEAD
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s" --decorate
 	it = !git init && git commit -m 'Git init' --allow-empty
+	stash-staged = "!bash -c \"git stash --keep-index; git stash push -m \"staged\" --keep-index; git stash pop stash@{1}\""
+	move-staged = "!bash -c \"git stash-staged;git commit -m \"temp\"; git stash; git reset --hard HEAD^; git stash pop\""
 
 	prune = fetch --prune
 	# Because I constantly forget how to do this
@@ -16,6 +18,7 @@
 	# https://git-scm.com/docs/git-stash
 
 	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
 	# No need for a GUI - a nice, colorful, graphical representation
 	# https://git-scm.com/docs/git-log
 	# via https://medium.com/@payload.dd/thanks-for-the-git-st-i-will-use-this-4da5839a21a4
