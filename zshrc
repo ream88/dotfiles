@@ -38,9 +38,9 @@ plugins=(
     gem
     git
     heroku
+    macos
     mix
     npm
-    osx
 )
 
 autoload -U compinit && compinit
