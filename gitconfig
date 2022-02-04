@@ -126,3 +126,12 @@
 	name = Mario Uher
 	email = uher.mario@gmail.com
 	signingkey = 75B3D888
+[pull]
+	ff = only
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
