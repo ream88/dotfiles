@@ -1,10 +1,12 @@
-# OS X shortcuts
+# macOS shortcuts
 alias rm=trash # brew install trash
+alias mute="osascript -e 'set volume with output muted'"
+alias unmute="osascript -e 'set volume without output muted'"
 
 # Git
-alias gd='git diff'
-alias gu='gitup'
-alias gpu='git push -u'
+alias gd="git diff"
+alias gu="gitup"
+alias gpu="git push -u"
 
 git-delete-squashed() {
     MAIN_BRANCH="${1:-main}"
@@ -43,3 +45,6 @@ evalenv() {
         eval $(awk '{printf "export %s\n", $0}' .env)
     fi
 }
+
+# TryHackMe
+alias rustscan=' docker run -it --rm --name rustscan rustscan/rustscan'
