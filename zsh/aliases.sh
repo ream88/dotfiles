@@ -46,5 +46,9 @@ evalenv() {
     fi
 }
 
+whatisusing() {
+    lsof -i tcp:$1
+}
+
 # TryHackMe
 alias rustscan=' docker run -it --rm --name rustscan rustscan/rustscan'
