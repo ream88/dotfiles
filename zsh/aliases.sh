@@ -50,5 +50,7 @@ whatisusing() {
     lsof -i tcp:$1
 }
 
+alias serve='ruby -run -e httpd . -p 8000'
+
 # TryHackMe
 alias rustscan=' docker run -it --rm --name rustscan rustscan/rustscan'
