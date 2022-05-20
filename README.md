@@ -23,6 +23,12 @@ cd; git clone git://github.com/ream88/dotfiles.git ~/.dotfiles; cd ~/.dotfiles; 
 brew install gpg pinentry-mac
 ```
 
+### Useful tools
+
+```sh
+brew install fd rg
+```
+
 This also helped: https://stackoverflow.com/a/55646458/326984
 
 ## Copyright
