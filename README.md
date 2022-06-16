@@ -18,18 +18,19 @@ curl -L https://raw.githubusercontent.com/ream88/ream88.zsh-theme/master/ream88.
 cd; git clone git://github.com/ream88/dotfiles.git ~/.dotfiles; cd ~/.dotfiles; ruby install.rb
 ```
 
-### gpg (for [signing commits](https://help.github.com/articles/generating-a-new-gpg-key/))
-```sh
-brew install gpg pinentry-mac
-```
-
 ### Useful tools
 
 ```sh
-brew install fd rg
+brew install fd rg fsevents-tools gpg pinentry-mac
 ```
 
-This also helped: https://stackoverflow.com/a/55646458/326984
+- `fd`: https://github.com/sharkdp/fd - A simple, fast and user-friendly alternative to 'find'
+- `rg`: https://github.com/BurntSushi/ripgrep
+- `fsevent-tools`: https://github.com/ggreer/fsevents-tools - provides both `notifywait` and `notifyloop`
+
+### Other useful stuff:
+
+- Fix problems with `gpg` and `pinentry-mac`: https://stackoverflow.com/a/55646458/326984
 
 ## Copyright
 
