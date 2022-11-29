@@ -21,12 +21,12 @@ cd; git clone git://github.com/ream88/dotfiles.git ~/.dotfiles; cd ~/.dotfiles; 
 ### Useful tools
 
 ```sh
-brew install fd rg fsevents-tools gpg pinentry-mac
+brew install fd rg entr gpg pinentry-mac
 ```
 
-- `fd`: https://github.com/sharkdp/fd - A simple, fast and user-friendly alternative to 'find'
+- `fd`: https://github.com/sharkdp/fd - A simple, fast and user-friendly alternative to `find`
 - `rg`: https://github.com/BurntSushi/ripgrep
-- `fsevent-tools`: https://github.com/ggreer/fsevents-tools - provides both `notifywait` and `notifyloop`
+- `entr`: https://github.com/eradman/entr - Run commands when files change
 
 ### Other useful stuff:
 
