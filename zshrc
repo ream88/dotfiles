@@ -70,3 +70,6 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 # https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
+
+# twilio autocomplete setup
+TWILIO_AC_ZSH_SETUP_PATH=/Users/mario/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
