@@ -53,7 +53,7 @@ whatisusing() {
 alias serve='ruby -run -e httpd . -p 8000'
 
 # TryHackMe
-alias rustscan=' docker run -it --rm --name rustscan rustscan/rustscan'
+alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan'
 
 # Use youtube-dl fork because of slow downloads
 alias youtube-dl='yt-dlp'
