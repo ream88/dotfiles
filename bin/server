@@ -1,0 +1,16 @@
+#!/bin/bash
+# https://github.com/EddySchauHai/bashttp/
+
+trap "echo Exited!; exit;" SIGINT SIGTERM
+PORT="${1:-8080}"
+
+main() {
+    touch "index.html"
+    echo "Serving index.html…"
+
+    while true; do
+        printf 'HTTP/1.1 200 OK\n\n%s' "$(cat index.html)" | nc -c -l ${PORT}
+    done
+}
+
+main
