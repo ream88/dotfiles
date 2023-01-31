@@ -40,9 +40,11 @@ alias bl='bundle list'
 
 evalenv() {
     if [ "$1" != "" ]; then
-        eval $(awk '{printf "export %s\n", $0}' $1)
+        set -o allexport
+        source "$1"
+        set +o allexport
     else
-        eval $(awk '{printf "export %s\n", $0}' .env)
+        evalenv .env
     fi
 }
 
