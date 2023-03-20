@@ -12,7 +12,7 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
 
 - dotfiles
   ```sh
-  cd; git clone git://github.com/ream88/dotfiles.git ~/.dotfiles; cd ~/.dotfiles; ruby install.rb
+  cd; git clone https://github.com/ream88/dotfiles.git ~/.dotfiles; cd ~/.dotfiles; ruby install.rb
   ```
 
 - Useful tools
