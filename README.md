@@ -18,12 +18,13 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
 - Useful tools
 
   ```sh
-  brew install fd rg entr gpg pinentry-mac
+  brew install fd rg entr gpg pinentry-mac thefuck
   ```
 
 - `fd`: https://github.com/sharkdp/fd - A simple, fast and user-friendly alternative to `find`
 - `rg`: https://github.com/BurntSushi/ripgrep
 - `entr`: https://github.com/eradman/entr - Run commands when files change
+- `thefuck`: https://github.com/nvbn/thefuck - Magnificent app which corrects your previous console command
 
 ## Other useful stuff:
 
