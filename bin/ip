@@ -6,11 +6,11 @@ case "$1" in
 Returns the current Wi-fi IP address.
 
   -h, --help      Prints this help.
-  -e, --external  Returns the current external IP address using whatismyip.com service.
+  -e, --external  Returns the current external IP address using icanhazip.com service.
 "
   ;;
 "-e" | "--external")
-  curl -s http://icanhazip.com
+  curl -s https://icanhazip.com
   ;;
 *)
   ipconfig getifaddr en0
