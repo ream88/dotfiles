@@ -5,12 +5,14 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
 - Homebrew: https://brew.sh
 
 - oh-my-zsh and custom theme
+
   ```sh
   curl -L http://install.ohmyz.sh | sh
   curl -L https://raw.githubusercontent.com/ream88/ream88.zsh-theme/master/ream88.zsh-theme > ~/.oh-my-zsh/themes/ream88.zsh-theme
   ```
 
 - dotfiles
+
   ```sh
   cd; git clone https://github.com/ream88/dotfiles.git ~/.dotfiles; cd ~/.dotfiles; ruby install.rb
   ```
@@ -18,13 +20,21 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
 - Useful tools
 
   ```sh
-  brew install fd rg entr gpg pinentry-mac thefuck
+  brew install \
+    entr \
+    fd \
+    gpg \
+    pinentry-mac \
+    rg \
+    thefuck \
+    trash
   ```
 
+- `entr`: https://github.com/eradman/entr - Run commands when files change
 - `fd`: https://github.com/sharkdp/fd - A simple, fast and user-friendly alternative to `find`
 - `rg`: https://github.com/BurntSushi/ripgrep
-- `entr`: https://github.com/eradman/entr - Run commands when files change
 - `thefuck`: https://github.com/nvbn/thefuck - Magnificent app which corrects your previous console command
+- `trash`: https://github.com/ali-rantakari/trash - Move files into trash instead of deleting them right away
 
 ## Other useful stuff:
 
@@ -32,4 +42,4 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
 
 ## Copyright
 
-See [LICENSE.md (The MIT license)](LICENSE.md).
+See [The MIT license](LICENSE).
