@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 exclude = Regexp.union(
   '.DS_Store',
   /\.md$/,
