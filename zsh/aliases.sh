@@ -7,6 +7,7 @@ alias unmute="osascript -e 'set volume without output muted'"
 alias gd="git diff"
 alias gu="gitup"
 alias gpu="git push -u"
+alias glc="git rev-parse HEAD"
 
 git-delete-squashed() {
     MAIN_BRANCH="${1:-main}"
