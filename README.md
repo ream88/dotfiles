@@ -7,14 +7,14 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
 - oh-my-zsh and custom theme
 
   ```sh
-  curl -L http://install.ohmyz.sh | sh
+  curl -L https://install.ohmyz.sh | sh
   curl -L https://raw.githubusercontent.com/ream88/ream88.zsh-theme/master/ream88.zsh-theme > ~/.oh-my-zsh/themes/ream88.zsh-theme
   ```
 
 - dotfiles
 
   ```sh
-  cd; git clone https://github.com/ream88/dotfiles.git ~/.dotfiles; cd ~/.dotfiles; ruby install.rb
+  curl -L https://raw.githubusercontent.com/ream88/dotfiles/main/install.sh | sh
   ```
 
 - Useful tools

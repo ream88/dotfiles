@@ -1,8 +1,5 @@
-.bundle
 .DS_Store
-.rake_tasks
-.ruby-version
 .zsh/ENV.sh
-vim/pack/*
-gnupg/*
-!gnupg/*.conf
+src/vim/pack/*
+src/gnupg/*
+!/src/gnupg/*.conf

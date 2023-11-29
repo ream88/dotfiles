@@ -73,3 +73,4 @@ eval $(thefuck --alias)
 
 # twilio autocomplete setup
 TWILIO_AC_ZSH_SETUP_PATH=/Users/mario/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
+[[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Volumes/CodeEdit/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
