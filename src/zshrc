@@ -55,7 +55,7 @@ setopt correct
 #setopt extended_glob
 
 # Autocomplete path, so `cd rails` jumpts to `~/Code/Other/rails`
-cdpath=(. ~ ~/Code/ ~/Code/* ~/Code/yodel/yodel/)
+cdpath=(. ~ ~/Code/ ~/Code/*)
 
 # Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
 export EDITOR=code
@@ -71,7 +71,3 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 # https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
-
-# twilio autocomplete setup
-TWILIO_AC_ZSH_SETUP_PATH=/Users/mario/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
-[[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Volumes/CodeEdit/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
