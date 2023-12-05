@@ -26,6 +26,7 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
     gpg \
     pinentry-mac \
     rg \
+    TankerHQ/homebrew-repo/ruplacer \
     thefuck \
     trash
   ```
@@ -33,6 +34,7 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
 - `entr`: https://github.com/eradman/entr - Run commands when files change
 - `fd`: https://github.com/sharkdp/fd - A simple, fast and user-friendly alternative to `find`
 - `rg`: https://github.com/BurntSushi/ripgrep
+- `ruplacer`: https://github.com/your-tools/ruplacer
 - `thefuck`: https://github.com/nvbn/thefuck - Magnificent app which corrects your previous console command
 - `trash`: https://github.com/ali-rantakari/trash - Move files into trash instead of deleting them right away
 
