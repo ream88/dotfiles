@@ -25,6 +25,7 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
     entr \
     fd \
     gpg \
+    mcfly \
     pinentry-mac \
     rg \
     TankerHQ/homebrew-repo/ruplacer \

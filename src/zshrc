@@ -60,9 +60,9 @@ cdpath=(. ~ ~/Code/ ~/Code/*)
 # Bundle editor, a.k.a editor which will be opened after `bundle open rails`.
 export EDITOR=code
 
-# Wildcard search
-bindkey '^R' history-incremental-pattern-search-backward
-bindkey '^S' history-incremental-pattern-search-forward
+# # Wildcard search
+# bindkey '^R' history-incremental-pattern-search-backward
+# bindkey '^S' history-incremental-pattern-search-forward
 
 # Use gpg-agent for git rebase and so on. Be sure to have use-agent config set properly.
 export GPG_TTY=$(tty)
@@ -70,4 +70,5 @@ export GPG_TTY=$(tty)
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 # https://github.com/nvbn/thefuck
-eval $(thefuck --alias)
+eval "$(thefuck --alias)"
+eval "$(mcfly init zsh)"
