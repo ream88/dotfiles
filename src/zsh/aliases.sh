@@ -61,6 +61,8 @@ alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan'
 # Use youtube-dl fork because of slow downloads
 alias youtube-dl='yt-dlp'
 
+alias rgf='rg --files | rg'
+
 # Integrate rg into vscode
 if [[ "$TERM_PROGRAM" == 'vscode' ]]; then
     alias 'rg'='rg --smart-case --hidden --no-heading --column'
