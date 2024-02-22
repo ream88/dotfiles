@@ -48,6 +48,7 @@ autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh/aliases.sh
+source /opt/homebrew/opt/autoenv/activate.sh
 
 # Don't correct arguments
 unsetopt correct_all
