@@ -2,8 +2,8 @@
 	unstage = reset HEAD
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s" --decorate
 	it = !git init && git commit -m 'Git init' --allow-empty
-	stash-staged = "!bash -c \"git stash --keep-index; git stash push -m \"staged\" --keep-index; git stash pop stash@{1}\""
-	move-staged = "!bash -c \"git stash-staged;git commit -m \"temp\"; git stash; git reset --hard HEAD^; git stash pop\""
+
+	stash-staged = git stash push -S
 
 	prune = fetch --prune
 	# Because I constantly forget how to do this
