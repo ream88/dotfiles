@@ -3,7 +3,7 @@
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s" --decorate
 	it = !git init && git commit -m 'Git init' --allow-empty
 
-	stash-staged = git stash push -S
+	stash-staged = stash push -S
 
 	prune = fetch --prune
 	# Because I constantly forget how to do this
