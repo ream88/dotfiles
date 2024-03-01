@@ -2,7 +2,7 @@
 ZSH=$HOME/.oh-my-zsh
 
 # Paths
-export PATH="/opt/homebrew/bin:$PATH:/Users/mario/.bin:/Applications/Postgres.app/Contents/Versions/14/bin"
+export PATH="/opt/homebrew/bin:$PATH:/Users/mario/.bin:/Applications/Postgres.app/Contents/Versions/15/bin"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Set name of the theme to load.
