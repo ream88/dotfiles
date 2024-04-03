@@ -73,3 +73,10 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 # https://github.com/nvbn/thefuck
 eval "$(thefuck --alias)"
 eval "$(mcfly init zsh)"
+
+# bun completions
+[ -s "/Users/mario/.bun/_bun" ] && source "/Users/mario/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
