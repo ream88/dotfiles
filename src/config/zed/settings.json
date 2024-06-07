@@ -10,7 +10,7 @@
   "features": {
     "copilot": false
   },
-  "theme": "Github Dark",
+  "theme": "Evil Rabbit (Dark)",
   "buffer_font_size": 18,
   "buffer_font_family": "Fira Code",
   "ensure_final_newline_on_save": true,
