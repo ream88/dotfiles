@@ -14,6 +14,10 @@ git-delete-squashed() {
     git checkout -q $MAIN_BRANCH && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base $MAIN_BRANCH $branch) && [[ $(git cherry $MAIN_BRANCH $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done
 }
 
+git-reset-harder() {
+    git reset --hard && git clean -df
+}
+
 # gt is alias for gittower .
 gt() {
     gittower $(git rev-parse --show-toplevel)
