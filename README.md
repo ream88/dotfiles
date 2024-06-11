@@ -23,6 +23,7 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
   brew install \
     entr \
     fd \
+    ffmpeg \
     gpg \
     http-server \
     mcfly \
@@ -30,7 +31,8 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
     rg \
     TankerHQ/homebrew-repo/ruplacer \
     thefuck \
-    trash
+    trash \
+    vips
   ```
 
   - `entr`: https://github.com/eradman/entr - Run commands when files change
