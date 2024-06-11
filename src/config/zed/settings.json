@@ -11,6 +11,19 @@
     "copilot": false
   },
   "theme": "Evil Rabbit (Dark)",
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/deps",
+    "**/node_modules",
+    "**/vendor"
+  ],
   "buffer_font_size": 18,
   "buffer_font_family": "Fira Code",
   "ensure_final_newline_on_save": true,
