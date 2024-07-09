@@ -18,11 +18,6 @@ git-reset-harder() {
     git reset --hard && git clean -df
 }
 
-# gt is alias for gittower .
-gt() {
-    gittower $(git rev-parse --show-toplevel)
-}
-
 # Change theme of Terminal.app
 tabc() {
     NAME="${1:-Basic}"
