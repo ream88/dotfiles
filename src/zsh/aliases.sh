@@ -39,13 +39,25 @@ alias bu='bundle update'
 alias bl='bundle list'
 
 evalenv() {
-    if [ "$1" != "" ]; then
+    YELLOW='\033[1;33m'
+    NO_COLOR='\033[0m'
+
+    case "$1" in
+    "")
+        evalenv .env
+        ;;
+
+    ".")
+        echo -e "${YELLOW}Warning:${NO_COLOR} You probably meant to call evalenv without an argument. I took care of it for you!"
+        evalenv .env
+        ;;
+
+    *)
         set -o allexport
         source "$1"
-        set +o allexport
-    else
-        evalenv .env
-    fi
+        set o allexport
+        ;;
+    esac
 }
 
 whatisusing() {
