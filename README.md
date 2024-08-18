@@ -21,6 +21,7 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
 
   ```sh
   brew install \
+    dasel \
     entr \
     fd \
     ffmpeg \
@@ -35,6 +36,7 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
     vips
   ```
 
+  - `dasel`: https://github.com/TomWright/dasel - Better then jq?
   - `entr`: https://github.com/eradman/entr - Run commands when files change
   - `fd`: https://github.com/sharkdp/fd - A simple, fast and user-friendly alternative to `find`
   - `http-server`: https://github.com/http-party/http-server
