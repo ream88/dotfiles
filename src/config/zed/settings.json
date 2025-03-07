@@ -7,10 +7,25 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "features": {
-    "copilot": false
+  "show_edit_predictions": false,
+  "icon_theme": "Material Icon Theme",
+  "ssh_connections": [
+    {
+      "host": "docker.local",
+      "projects": []
+    }
+  ],
+  "assistant": {
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-3-7-sonnet-latest"
+    },
+    "version": "2"
   },
-  "theme": "Evil Rabbit (Dark)",
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "theme": "GitHub Dark Default",
   "file_scan_exclusions": [
     "**/.git",
     "**/.svn",
@@ -21,8 +36,7 @@
     "**/.classpath",
     "**/.settings",
     "**/deps",
-    "**/node_modules",
-    "**/vendor"
+    "**/node_modules"
   ],
   "buffer_font_size": 18,
   "buffer_font_family": "Fira Code",
@@ -34,17 +48,36 @@
   "tabs": {
     "git_status": true
   },
-  "ui_font_family": "Zed Sans",
+  "ui_font_family": "Fira Code",
   "terminal": {
+    "button": false
+  },
+  "chat_panel": {
+    "button": "never"
+  },
+  "collaboration_panel": {
     "button": false
   },
   "languages": {
     "Elixir": {
       "language_servers": [
-        "elixir-ls",
-        "!next-ls",
+        "!elixir-ls",
+        "next-ls",
         "!lexical"
       ]
+    },
+    "Shell Script": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "shfmt",
+          "arguments": [
+            "-i",
+            "4"
+          ]
+        }
+      }
     }
-  }
+  },
+  "preferred_line_length": 80
 }
