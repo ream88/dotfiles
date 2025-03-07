@@ -1,7 +1,9 @@
 [alias]
 	unstage = reset HEAD
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s" --decorate
-	it = !git init && git commit -m 'Git init' --allow-empty
+
+	reset-hard = !git reset --hard
+	reset-harder = !git reset --hard && git clean -df
 
 	stash-staged = stash push -S
 
