@@ -53,6 +53,9 @@ unsetopt correct_all
 setopt correct
 #setopt extended_glob
 
+# Disable bracketed mode (e.g., content pasted twice into the terminal).
+unset zle_bracketed_paste
+
 # Autocomplete path, so `cd rails` jumpts to `~/Code/Other/rails`
 cdpath=(. ~ ~/Code/ ~/Code/*)
 
