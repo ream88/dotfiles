@@ -26,7 +26,6 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
     fd \
     ffmpeg \
     gpg \
-    http-server \
     mcfly \
     pinentry-mac \
     rg \
@@ -39,7 +38,6 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
   - `dasel`: https://github.com/TomWright/dasel - Better then `jq`?
   - `entr`: https://github.com/eradman/entr - Run commands when files change
   - `fd`: https://github.com/sharkdp/fd - A simple, fast and user-friendly alternative to `find`
-  - `http-server`: https://github.com/http-party/http-server
   - `rg`: https://github.com/BurntSushi/ripgrep
   - `ruplacer`: https://github.com/your-tools/ruplacer
   - `thefuck`: https://github.com/nvbn/thefuck - Magnificent app which corrects your previous console command
