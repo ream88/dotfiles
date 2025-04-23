@@ -26,7 +26,6 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
     fd \
     ffmpeg \
     gpg \
-    mcfly \
     pinentry-mac \
     rg \
     TankerHQ/homebrew-repo/ruplacer \
