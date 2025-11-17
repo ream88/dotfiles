@@ -87,3 +87,9 @@ fpath=(/Users/mario/.docker/completions $fpath)
 autoload -U compinit && compinit
 
 export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=$(($(sysctl -n hw.physicalcpu) / 2))
+
+# Fix problems with claude
+if [ -n "$SSH_CONNECTION" ] && [ -z "$KEYCHAIN_UNLOCKED" ]; then
+  security unlock-keychain ~/Library/Keychains/login.keychain-db
+  export KEYCHAIN_UNLOCKED=true
+fi
