@@ -85,3 +85,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/mario/.docker/completions $fpath)
 autoload -U compinit && compinit
+
+export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=$(($(sysctl -n hw.physicalcpu) / 2))
