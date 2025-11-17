@@ -61,3 +61,6 @@ if [[ "$TERM_PROGRAM" == 'vscode' ]]; then
 else
     alias 'rg'='rg --smart-case --hidden'
 fi
+
+# Claude
+alias claude!='claude --dangerously-skip-permissions'
