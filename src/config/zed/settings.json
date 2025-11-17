@@ -7,26 +7,104 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "project_panel": {},
+  "allow_rewrap": "anywhere",
+  "debugger": {
+    "button": false
+  },
+  "minimap": {
+    "show": "always"
+  },
+  "vim_mode": false,
   "show_edit_predictions": false,
   "icon_theme": "Material Icon Theme",
   "ssh_connections": [
     {
       "host": "docker.local",
-      "projects": []
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/pi"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "pi.local",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/pi"
+          ]
+        }
+      ]
     }
   ],
-  "assistant": {
+  "agent": {
+    "play_sound_when_agent_done": true,
+    "profiles": {
+      "write": {
+        "name": "Write",
+        "tools": {
+          "open": true,
+          "create_directory": true,
+          "batch_tool": true,
+          "code_actions": true,
+          "code_symbols": true,
+          "contents": true,
+          "copy_path": true,
+          "create_file": true,
+          "delete_path": true,
+          "diagnostics": true,
+          "edit_file": true,
+          "fetch": true,
+          "list_directory": true,
+          "move_path": true,
+          "now": true,
+          "find_path": true,
+          "read_file": true,
+          "grep": true,
+          "rename": true,
+          "symbol_info": true,
+          "terminal": true,
+          "thinking": true,
+          "web_search": true
+        },
+        "enable_all_context_servers": true,
+        "context_servers": {
+          "Tidewave": {
+            "tools": {
+              "trace_process": true,
+              "project_eval": true,
+              "package_search": true,
+              "package_docs_search": true,
+              "get_source_location": true,
+              "get_process_info": true,
+              "get_logs": true,
+              "get_ecto_schemas": true,
+              "execute_sql_query": true,
+              "list_liveview_pages": true
+            }
+          }
+        }
+      }
+    },
+    "always_allow_tool_actions": true,
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-3-7-sonnet-latest"
+      "model": "claude-sonnet-4-5-thinking-latest"
     },
-    "version": "2"
   },
   "features": {
     "edit_prediction_provider": "zed"
   },
   "theme": "GitHub Dark Default",
   "file_scan_exclusions": [
+    ".elixir-tools",
+    ".elixir_ls",
+    ".expert",
     "**/.git",
     "**/.svn",
     "**/.hg",
@@ -50,10 +128,7 @@
   },
   "ui_font_family": "Fira Code",
   "terminal": {
-    "button": false
-  },
-  "chat_panel": {
-    "button": "never"
+    "button": true
   },
   "collaboration_panel": {
     "button": false
@@ -61,13 +136,16 @@
   "languages": {
     "Elixir": {
       "language_servers": [
+        "!expert",
         "!elixir-ls",
         "next-ls",
-        "!lexical"
+        "!lexical",
+        "tailwindcss-language-server",
+        "emmet-language-server"
       ]
     },
     "Shell Script": {
-      "format_on_save": "on",
+      "format_on_save": "off",
       "formatter": {
         "external": {
           "command": "shfmt",
@@ -79,5 +157,5 @@
       }
     }
   },
-  "preferred_line_length": 80
+  "preferred_line_length": 100
 }
