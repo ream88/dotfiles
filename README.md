@@ -32,7 +32,8 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
     TankerHQ/homebrew-repo/ruplacer \
     thefuck \
     trash \
-    vips
+    vips \
+    witr
   ```
 
   - `dasel`: https://github.com/TomWright/dasel - Better then `jq`?
@@ -42,6 +43,7 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
   - `ruplacer`: https://github.com/your-tools/ruplacer
   - `thefuck`: https://github.com/nvbn/thefuck - Magnificent app which corrects your previous console command
   - `trash`: https://github.com/ali-rantakari/trash - Move files into trash instead of deleting them right away
+  - `witr`: https://github.com/pranshuparmar/witr - Why Is This Running? Explains why processes are running
 
 ## Other useful stuff:
 
