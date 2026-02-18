@@ -38,7 +38,7 @@ evalenv() {
     *)
         set -o allexport
         source "$1"
-        set o allexport
+        set +o allexport
         ;;
     esac
 }
