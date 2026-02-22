@@ -64,3 +64,5 @@ fi
 
 # Claude
 alias claude!='claude --dangerously-skip-permissions'
+alias c='claude'
+alias c!='claude!'
