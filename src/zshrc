@@ -114,3 +114,6 @@ command -v mcfly >/dev/null && eval "$(mcfly init zsh)"
 # # Wildcard search (disabled in favor of McFly)
 # bindkey '^R' history-incremental-pattern-search-backward
 # bindkey '^S' history-incremental-pattern-search-forward
+
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
+export PATH="$HOME/.local/bin:$PATH"
