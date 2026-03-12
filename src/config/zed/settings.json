@@ -7,6 +7,12 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "edit_predictions": {
+    "provider": "zed"
+  },
+  "git_panel": {
+    "tree_view": false
+  },
   "project_panel": {},
   "allow_rewrap": "anywhere",
   "debugger": {
@@ -43,6 +49,9 @@
     }
   ],
   "agent": {
+    "tool_permissions": {
+      "default": "allow"
+    },
     "play_sound_when_agent_done": true,
     "profiles": {
       "write": {
@@ -91,14 +100,10 @@
         }
       }
     },
-    "always_allow_tool_actions": true,
     "default_model": {
       "provider": "anthropic",
       "model": "claude-sonnet-4-5-thinking-latest"
     },
-  },
-  "features": {
-    "edit_prediction_provider": "zed"
   },
   "theme": "GitHub Dark Default",
   "file_scan_exclusions": [
@@ -133,12 +138,21 @@
   "collaboration_panel": {
     "button": false
   },
+  "lsp": {
+    "expert": {
+      "binary": {
+        "arguments": [
+          "--stdio"
+        ]
+      }
+    }
+  },
   "languages": {
     "Elixir": {
       "language_servers": [
-        "!expert",
+        "expert",
         "!elixir-ls",
-        "next-ls",
+        "!next-ls",
         "!lexical",
         "tailwindcss-language-server",
         "emmet-language-server"
