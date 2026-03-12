@@ -26,16 +26,16 @@
 	contribute = town contribute
 	diff-parent = town diff-parent
 	hack = town hack
-	kill = town kill
 	observe = town observe
 	park = town park
 	prepend = town prepend
 	propose = town propose
-	rename-branch = town rename-branch
 	repo = town repo
 	set-parent = town set-parent
 	ship = town ship
 	sync = town sync
+	delete = town delete
+	rename = town rename
 
 	# No need for a GUI - a nice, colorful, graphical representation
 	# https://git-scm.com/docs/git-log
@@ -156,3 +156,7 @@
 
 [init]
 	defaultBranch = main
+[git-town]
+	main-branch = main
+	sync-feature-strategy = rebase
+	forge-type = github
