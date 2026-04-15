@@ -31,7 +31,8 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
     rg \
     TankerHQ/homebrew-repo/ruplacer \
     thefuck \
-    trash
+    trash \
+    worktrunk
   ```
 
   - `claude-code`: https://github.com/anthropics/claude-code - Claude Code CLI
@@ -42,6 +43,7 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
   - `ruplacer`: https://github.com/your-tools/ruplacer
   - `thefuck`: https://github.com/nvbn/thefuck - Magnificent app which corrects your previous console command
   - `trash`: https://github.com/ali-rantakari/trash - Move files into trash instead of deleting them right away
+  - `worktrunk`: https://worktrunk.dev - Git worktree management for parallel AI agent workflows
 
 ## Previously used tools
 
