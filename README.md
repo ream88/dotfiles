@@ -37,6 +37,7 @@ These are config files, [fixes](Fixes.md) and [commands](Commands.md) to set up 
   - `claude-code`: https://github.com/anthropics/claude-code - Claude Code CLI
   - `fd`: https://github.com/sharkdp/fd - A simple, fast and user-friendly alternative to `find`
   - `gh`: https://github.com/cli/cli - GitHub CLI
+    - `gh-open`: https://github.com/ream88/gh-open - `gh extension install ream88/gh-open`
   - `rg`: https://github.com/BurntSushi/ripgrep
   - `ruplacer`: https://github.com/your-tools/ruplacer
   - `thefuck`: https://github.com/nvbn/thefuck - Magnificent app which corrects your previous console command
