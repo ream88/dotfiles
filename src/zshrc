@@ -95,12 +95,6 @@ fpath=(/Users/mario/.docker/completions $fpath)
 export MCFLY_DELETE_WITHOUT_CONFIRM=true
 export MCFLY_FUZZY=2
 
-# Fix problems with claude
-if [ -n "$SSH_CONNECTION" ] && [ -z "$KEYCHAIN_UNLOCKED" ]; then
-  security unlock-keychain ~/Library/Keychains/login.keychain-db
-  export KEYCHAIN_UNLOCKED=true
-fi
-
 # ============================================================================
 # External Tool Initialization (loaded last for performance)
 # ============================================================================
