@@ -7,13 +7,42 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "diff_view_style": "unified",
+  "tab_bar": {
+    "show_tab_bar_buttons": true,
+    "show_nav_history_buttons": false,
+    "show": true
+  },
+  "title_bar": {
+    "show_user_picture": true,
+    "show_menus": false
+  },
+  "status_bar": {
+    "show_active_file": false
+  },
+  "diagnostics": {
+    "button": true
+  },
+  "rounded_selection": true,
+  "cli_default_open_behavior": "new_window",
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
   "edit_predictions": {
     "provider": "zed"
   },
   "git_panel": {
+    "dock": "left",
     "tree_view": false
   },
-  "project_panel": {},
+  "project_panel": {
+    "dock": "left"
+  },
   "allow_rewrap": "anywhere",
   "debugger": {
     "button": false
@@ -49,14 +78,16 @@
     }
   ],
   "agent": {
+    "dock": "left",
     "tool_permissions": {
       "default": "allow"
     },
-    "play_sound_when_agent_done": true,
+    "play_sound_when_agent_done": "always",
     "profiles": {
       "write": {
         "name": "Write",
         "tools": {
+          "search_web": true,
           "open": true,
           "create_directory": true,
           "batch_tool": true,
@@ -78,8 +109,7 @@
           "rename": true,
           "symbol_info": true,
           "terminal": true,
-          "thinking": true,
-          "web_search": true
+          "thinking": true
         },
         "enable_all_context_servers": true,
         "context_servers": {
@@ -101,8 +131,10 @@
       }
     },
     "default_model": {
+      "effort": "high",
+      "enable_thinking": true,
       "provider": "anthropic",
-      "model": "claude-sonnet-4-5-thinking-latest"
+      "model": "claude-opus-4-7-latest"
     },
   },
   "theme": "GitHub Dark Default",
@@ -129,6 +161,7 @@
   "tab_size": 2,
   "formatter": "language_server",
   "tabs": {
+    "file_icons": true,
     "git_status": true
   },
   "ui_font_family": "Fira Code",
@@ -136,6 +169,7 @@
     "button": true
   },
   "collaboration_panel": {
+    "dock": "right",
     "button": false
   },
   "lsp": {
