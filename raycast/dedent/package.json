@@ -1,0 +1,56 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "dedent",
+  "title": "Dedent",
+  "description": "Strip common leading whitespace from text.",
+  "icon": "icon.png",
+  "author": "ream88",
+  "license": "MIT",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Productivity",
+    "Developer Tools"
+  ],
+  "commands": [
+    {
+      "name": "dedent-clipboard",
+      "title": "Dedent Clipboard",
+      "description": "Strip the common leading whitespace from each line in the clipboard.",
+      "mode": "no-view"
+    },
+    {
+      "name": "dedent-selection",
+      "title": "Dedent Selection",
+      "description": "Dedent the current selection and copy the result to the clipboard.",
+      "mode": "no-view"
+    },
+    {
+      "name": "dedent-clipboard-and-paste",
+      "title": "Dedent Clipboard and Paste",
+      "description": "Dedent the clipboard contents and paste the result.",
+      "mode": "no-view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.17"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/node": "20.8.10",
+    "@types/react": "18.3.3",
+    "eslint": "^9",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5",
+    "vitest": "^2.1.4"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  }
+}
