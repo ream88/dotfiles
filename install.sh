@@ -2,7 +2,7 @@
 set -e
 
 if [ ! -d "$HOME/.dotfiles" ]; then
-  git clone https://github.com/ream88/dotfiles.git $HOME/.dotfiles
+  git clone --recurse-submodules https://github.com/ream88/dotfiles.git $HOME/.dotfiles
 fi
 
 install() {
@@ -11,7 +11,7 @@ install() {
 
     mkdir -pv $2
 
-    if [ -d $from ]; then
+    if [ -d $from ] && [ ! -e "$from/.git" ]; then
       install $from "$2$basename/"
     else
       echo ln -sfvn $from "$2$basename"
