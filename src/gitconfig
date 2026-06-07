@@ -91,6 +91,7 @@
 
 [fetch]
 	fsckobjects = false
+	prune = true
 
 [filter "media"]
 	clean = git-media-clean %f
