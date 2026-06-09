@@ -22,48 +22,31 @@ export function dedent(text: string): string {
     bases.push(indent);
   }
 
-  // Dedent each blank-line-delimited block by its own common prefix, so a
-  // flush-left line in one block doesn't cancel the indent of another.
-  const result: string[] = [];
-  let block: string[] = [];
+  let common: string | null = null;
+  for (const line of merged) {
+    const stripped = line.replace(/^[ \t]+/, "");
+    if (stripped.length === 0) continue;
 
-  const flush = () => {
-    let common: string | null = null;
-    for (const line of block) {
-      const leading = line.slice(
-        0,
-        line.length - line.replace(/^[ \t]+/, "").length,
-      );
-      if (common === null) {
-        common = leading;
-      } else {
-        let i = 0;
-        const max = Math.min(common.length, leading.length);
-        while (i < max && common[i] === leading[i]) i++;
-        common = common.slice(0, i);
-      }
-      if (common === "") break;
+    const leading = line.slice(0, line.length - stripped.length);
+    if (common === null) {
+      common = leading;
+    } else {
+      let i = 0;
+      const max = Math.min(common.length, leading.length);
+      while (i < max && common[i] === leading[i]) i++;
+      common = common.slice(0, i);
     }
+    if (common === "") break;
+  }
 
-    const prefix = common ?? "";
-    for (const line of block) {
+  const prefix = common ?? "";
+  return merged
+    .map((line) => {
+      if (line.replace(/[ \t]+$/, "").length === 0) return "";
       const dedented = line.startsWith(prefix)
         ? line.slice(prefix.length)
         : line;
-      result.push(dedented.replace(/[ \t]+$/, ""));
-    }
-    block = [];
-  };
-
-  for (const line of merged) {
-    if (line.replace(/[ \t]+$/, "").length === 0) {
-      flush();
-      result.push("");
-    } else {
-      block.push(line);
-    }
-  }
-  flush();
-
-  return result.join("\n");
+      return dedented.replace(/[ \t]+$/, "");
+    })
+    .join("\n");
 }

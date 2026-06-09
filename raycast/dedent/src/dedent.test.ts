@@ -102,26 +102,4 @@ describe("dedent", () => {
   it("preserves the trailing newline", () => {
     expect(dedent("  foo\n  bar\n")).toBe("foo\nbar\n");
   });
-
-  it("dedents an indented block following a flush-left first line", () => {
-    const input = [
-      "Today this opens as an overlay.",
-      "",
-      "  I'd love a push variant where the",
-      "  page shrinks to make room beside it.",
-      "",
-      "  Use case: a persistent panel.",
-    ].join("\n");
-
-    const expected = [
-      "Today this opens as an overlay.",
-      "",
-      "I'd love a push variant where the",
-      "page shrinks to make room beside it.",
-      "",
-      "Use case: a persistent panel.",
-    ].join("\n");
-
-    expect(dedent(input)).toBe(expected);
-  });
 });
