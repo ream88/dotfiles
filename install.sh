@@ -23,3 +23,8 @@ install "$HOME/.dotfiles/src" "$HOME/."
 
 # ponytail: install()'s glob skips dotfiles, so link the skills lockfile explicitly
 echo ln -sfvn "$HOME/.dotfiles/src/agents/.skill-lock.json" "$HOME/.agents/.skill-lock.json"
+
+# Reinstall skills from the lockfile on a fresh machine (grep instead of jq, which macOS lacks)
+if [ ! -d "$HOME/.agents/skills" ]; then
+  grep -o '"source": "[^"]*"' "$HOME/.dotfiles/src/agents/.skill-lock.json" | cut -d'"' -f4 | sort -u | xargs -n1 bunx skills add
+fi
