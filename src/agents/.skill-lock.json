@@ -1,0 +1,169 @@
+{
+  "version": 3,
+  "skills": {
+    "seo-audit": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
+      "skillPath": "skills/seo-audit/SKILL.md",
+      "skillFolderHash": "c5423e592d1ce900fafca88b17f3896eea53b237",
+      "installedAt": "2026-02-01T11:52:12.522Z",
+      "updatedAt": "2026-03-22T09:04:39.120Z"
+    },
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "skillFolderHash": "d601c797f9bbb8e999d98ff25d0ebdfb3acbd6aa",
+      "installedAt": "2026-02-01T11:53:19.252Z",
+      "updatedAt": "2026-03-22T09:04:41.173Z"
+    },
+    "swiftui-expert-skill": {
+      "source": "avdlee/swiftui-agent-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/avdlee/swiftui-agent-skill.git",
+      "skillPath": "swiftui-expert-skill/SKILL.md",
+      "skillFolderHash": "64f93da3170ffc59320b2d42061a00539634ed94",
+      "installedAt": "2026-02-14T10:11:25.500Z",
+      "updatedAt": "2026-03-22T09:04:46.614Z"
+    },
+    "last30days": {
+      "source": "mvanhorn/last30days-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mvanhorn/last30days-skill.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "6a5a0013c03b3cc03758a07d41cfa93777a5b623",
+      "pluginName": "last30days",
+      "installedAt": "2026-02-27T09:39:02.736Z",
+      "updatedAt": "2026-03-22T09:04:57.608Z"
+    },
+    "openai-whisper": {
+      "source": "steipete/clawdis",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/steipete/clawdis.git",
+      "skillPath": "skills/openai-whisper/SKILL.md",
+      "skillFolderHash": "4c2ef59ee642fd267ef3c8f899805d41df86b74e",
+      "installedAt": "2026-03-30T12:09:37.742Z",
+      "updatedAt": "2026-03-30T12:09:37.742Z"
+    },
+    "elixir": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mindrally/skills.git",
+      "skillPath": "elixir/SKILL.md",
+      "skillFolderHash": "b1af003305a39fec8506b6826b85f2cacf8273e4",
+      "installedAt": "2026-04-12T18:19:48.003Z",
+      "updatedAt": "2026-04-12T18:19:48.003Z"
+    },
+    "swiftui-pro": {
+      "source": "twostraws/swiftui-agent-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/twostraws/swiftui-agent-skill.git",
+      "skillPath": "swiftui-pro/SKILL.md",
+      "skillFolderHash": "09b8fff9743cfc94eea3ada3727e3ec369ff10fb",
+      "installedAt": "2026-06-29T09:49:47.060Z",
+      "updatedAt": "2026-06-29T09:49:47.060Z"
+    },
+    "swift-concurrency-pro": {
+      "source": "twostraws/swift-concurrency-agent-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/twostraws/swift-concurrency-agent-skill.git",
+      "skillPath": "swift-concurrency-pro/SKILL.md",
+      "skillFolderHash": "83789ccef30cad59f5d57dd4d98f466efa21104f",
+      "installedAt": "2026-06-29T09:50:47.323Z",
+      "updatedAt": "2026-06-29T09:50:47.323Z"
+    },
+    "swift-testing-pro": {
+      "source": "twostraws/swift-testing-agent-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/twostraws/swift-testing-agent-skill.git",
+      "skillPath": "swift-testing-pro/SKILL.md",
+      "skillFolderHash": "809f32e9abf0369b2460286cc87f0aad205ee26c",
+      "installedAt": "2026-06-29T09:51:03.486Z",
+      "updatedAt": "2026-06-29T09:51:03.486Z"
+    },
+    "swiftdata-pro": {
+      "source": "twostraws/swiftdata-agent-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/twostraws/swiftdata-agent-skill.git",
+      "skillPath": "swiftdata-pro/SKILL.md",
+      "skillFolderHash": "640a87a8891c57e1682fb2a5086d8673222c47ef",
+      "installedAt": "2026-06-29T09:51:20.326Z",
+      "updatedAt": "2026-06-29T09:51:20.326Z"
+    },
+    "better-colors": {
+      "source": "jakubkrehel/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/jakubkrehel/skills.git",
+      "skillPath": "skills/better-colors/SKILL.md",
+      "skillFolderHash": "78717951629ce065b2bd8357374a7ff2f15bd363",
+      "installedAt": "2026-07-18T08:31:49.576Z",
+      "updatedAt": "2026-07-18T08:31:49.576Z"
+    },
+    "better-typography": {
+      "source": "jakubkrehel/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/jakubkrehel/skills.git",
+      "skillPath": "skills/better-typography/SKILL.md",
+      "skillFolderHash": "3c3b20e326e6f95b0e4376acf8369206c43d6d1a",
+      "installedAt": "2026-07-18T08:31:49.579Z",
+      "updatedAt": "2026-07-18T08:31:49.579Z"
+    },
+    "better-ui": {
+      "source": "jakubkrehel/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/jakubkrehel/skills.git",
+      "skillPath": "skills/better-ui/SKILL.md",
+      "skillFolderHash": "c85dfe0d2c5d1fa599c88e54cef7ae9495862a04",
+      "installedAt": "2026-07-18T08:31:49.580Z",
+      "updatedAt": "2026-07-18T08:31:49.580Z"
+    },
+    "fixing-accessibility": {
+      "source": "ibelick/ui-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ibelick/ui-skills.git",
+      "skillPath": "skills/fixing-accessibility/SKILL.md",
+      "skillFolderHash": "e825388bce62e4456ed3b2b899c9bc58f5873c5b",
+      "installedAt": "2026-07-18T08:32:54.738Z",
+      "updatedAt": "2026-07-18T08:32:54.738Z"
+    },
+    "fixing-motion-performance": {
+      "source": "ibelick/ui-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ibelick/ui-skills.git",
+      "skillPath": "skills/fixing-motion-performance/SKILL.md",
+      "skillFolderHash": "76e5757bd2eb8ff38ff667eca9b665cbd707a386",
+      "installedAt": "2026-07-18T08:32:54.739Z",
+      "updatedAt": "2026-07-18T08:32:54.739Z"
+    },
+    "improve-ui": {
+      "source": "ibelick/ui-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ibelick/ui-skills.git",
+      "skillPath": "skills/improve-ui/SKILL.md",
+      "skillFolderHash": "dfe1caace864e8a5db1719c4440633cd7f2f7e83",
+      "installedAt": "2026-07-18T08:32:54.740Z",
+      "updatedAt": "2026-07-18T08:32:54.740Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "antigravity-cli",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-code-cli",
+    "opencode",
+    "warp",
+    "zed",
+    "claude-code"
+  ]
+}

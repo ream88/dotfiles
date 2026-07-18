@@ -20,3 +20,6 @@ install() {
 }
 
 install "$HOME/.dotfiles/src" "$HOME/."
+
+# ponytail: install()'s glob skips dotfiles, so link the skills lockfile explicitly
+echo ln -sfvn "$HOME/.dotfiles/src/agents/.skill-lock.json" "$HOME/.agents/.skill-lock.json"
