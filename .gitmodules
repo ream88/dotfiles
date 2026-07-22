@@ -1,3 +1,0 @@
-[submodule "src/claude/skills/humanizer"]
-	path = src/claude/skills/humanizer
-	url = https://github.com/blader/humanizer.git
