@@ -1,4 +1,11 @@
+---
+name: commit
+description: Use when the user asks to commit changes, asks for a commit message, mentions the commit workflow from ~/.dotfiles, or says "use the commit skill". Produces a short imperative subject focused on impact, under 50 characters, with no trailing period. If multiple plausible descriptions exist, present up to 3 options before committing.
+---
+
 Commit the tracked changes. Keep the commit subject short and concise, and follow the provided rules. Include only co-authoring information; add no other description.
+
+Stage only the paths you edited yourself — pass each one explicitly to `git add`. Never use `git add -A`, `git add .`, or `git commit -a`. Another session may share the checkout, so treat every other entry in `git status` as somebody else's in-flight work: leave it unstaged, and say what you left out.
 
 - Describe the **impact** (what the user/system gains), not how it was implemented
   - Good: "Allow switching accounts in iOS app"
