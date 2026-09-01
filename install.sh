@@ -37,11 +37,13 @@ echo ln -sfvn "$HOME/.dotfiles/src/agents/.skill-lock.json" "$HOME/.agents/.skil
 # guard: printing costs nothing, and a hidden command is one you cannot run.
 #
 # -g installs user-level rather than into whatever directory this is run from,
-# -y skips the prompts, -a links them into ~/.claude/skills.
+# -y skips the prompts, -a links them into ~/.claude/skills. </dev/null because
+# sh reads this script FROM stdin: without it the first skills add drains the
+# remaining lines as its own input and nothing after it runs.
 grep -o '"source": "[^"]*"' "$HOME/.dotfiles/src/agents/.skill-lock.json" |
   cut -d'"' -f4 | sort -u |
   while read -r source; do
-    echo "bunx skills add -g -y -a claude $source"
+    echo "bunx skills add -g -y -a claude $source </dev/null"
   done
 
 # Last, so it is what is left on screen after the commands scroll past. Every
