@@ -43,3 +43,29 @@ grep -o '"source": "[^"]*"' "$HOME/.dotfiles/src/agents/.skill-lock.json" |
   while read -r source; do
     echo "bunx skills add -g -y -a claude $source"
   done
+
+# Last, so it is what is left on screen after the commands scroll past. Every
+# line is a comment, so piping this whole script to a shell stays valid, and
+# the colour goes after the leading # so that stays true.
+red=''
+reset=''
+if [ -t 1 ]; then
+  red=$(printf '\033[1;31m')
+  reset=$(printf '\033[0m')
+fi
+
+cat <<'BANNER' | sed "s/^#/#$red/;s/\$/$reset/"
+
+#                           _
+# __      ____ _ _ __ _ __ (_)_ __   __ _
+# \ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+#  \ V  V / (_| | |  | | | | | | | | (_| |
+#   \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+#                                   |___/
+#
+# Nothing above has run. These are commands, printed for you to read first.
+# To actually apply them:
+#
+#     sh ~/.dotfiles/install.sh | sh
+#
+BANNER
