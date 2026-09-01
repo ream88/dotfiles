@@ -18,6 +18,12 @@ install() {
     mkdir -pv $2
 
     if [ -d $from ] && [ ! -e "$from/.git" ]; then
+      # The destination may already be a symlink back into this repo, and then
+      # every ln generated below it resolves through that link to the source
+      # and replaces the file with a link to itself. Leave it alone: it already
+      # points where the recursion was going to put things.
+      [ -L "$2$basename" ] && continue
+
       install $from "$2$basename/"
     else
       echo ln -sfvn $from "$2$basename"
