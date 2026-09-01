@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "theme": "GitHub Dark Default",
   "diff_view_style": "unified",
   "tab_bar": {
     "show_tab_bar_buttons": true,
@@ -31,6 +32,7 @@
     }
   },
   "outline_panel": {
+    "button": false,
     "dock": "right"
   },
   "edit_predictions": {
@@ -52,7 +54,11 @@
   },
   "vim_mode": false,
   "show_edit_predictions": false,
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme"
+  },
   "ssh_connections": [
     {
       "host": "docker.local",
@@ -78,7 +84,9 @@
     }
   ],
   "agent": {
-    "dock": "left",
+    "button": false,
+    "sidebar_side": "right",
+    "dock": "right",
     "tool_permissions": {
       "default": "allow"
     },
@@ -137,7 +145,6 @@
       "model": "claude-opus-4-7-latest"
     },
   },
-  "theme": "GitHub Dark Default",
   "file_scan_exclusions": [
     ".elixir-tools",
     ".elixir_ls",
