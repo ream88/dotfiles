@@ -6,46 +6,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
       "skillPath": "skills/seo-audit/SKILL.md",
-      "skillFolderHash": "c5423e592d1ce900fafca88b17f3896eea53b237",
+      "skillFolderHash": "0f1f5e31ce921513828ac8f440f358df6fa0751a",
       "installedAt": "2026-02-01T11:52:12.522Z",
-      "updatedAt": "2026-03-22T09:04:39.120Z"
-    },
-    "agent-browser": {
-      "source": "vercel-labs/agent-browser",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
-      "skillPath": "skills/agent-browser/SKILL.md",
-      "skillFolderHash": "d601c797f9bbb8e999d98ff25d0ebdfb3acbd6aa",
-      "installedAt": "2026-02-01T11:53:19.252Z",
-      "updatedAt": "2026-03-22T09:04:41.173Z"
+      "updatedAt": "2026-07-22T11:46:51.901Z"
     },
     "swiftui-expert-skill": {
       "source": "avdlee/swiftui-agent-skill",
       "sourceType": "github",
       "sourceUrl": "https://github.com/avdlee/swiftui-agent-skill.git",
       "skillPath": "swiftui-expert-skill/SKILL.md",
-      "skillFolderHash": "64f93da3170ffc59320b2d42061a00539634ed94",
+      "skillFolderHash": "813404b84a2b3de4f920be8671971bcb014d82ef",
       "installedAt": "2026-02-14T10:11:25.500Z",
-      "updatedAt": "2026-03-22T09:04:46.614Z"
-    },
-    "last30days": {
-      "source": "mvanhorn/last30days-skill",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/mvanhorn/last30days-skill.git",
-      "skillPath": "SKILL.md",
-      "skillFolderHash": "6a5a0013c03b3cc03758a07d41cfa93777a5b623",
-      "pluginName": "last30days",
-      "installedAt": "2026-02-27T09:39:02.736Z",
-      "updatedAt": "2026-03-22T09:04:57.608Z"
+      "updatedAt": "2026-07-22T11:46:55.593Z"
     },
     "openai-whisper": {
       "source": "steipete/clawdis",
       "sourceType": "github",
       "sourceUrl": "https://github.com/steipete/clawdis.git",
       "skillPath": "skills/openai-whisper/SKILL.md",
-      "skillFolderHash": "4c2ef59ee642fd267ef3c8f899805d41df86b74e",
+      "skillFolderHash": "d638ee539f93ec0335c1c927118c01a6c58e4c13",
       "installedAt": "2026-03-30T12:09:37.742Z",
-      "updatedAt": "2026-03-30T12:09:37.742Z"
+      "updatedAt": "2026-07-22T11:47:15.821Z"
     },
     "elixir": {
       "source": "mindrally/skills",
@@ -154,6 +135,24 @@
       "skillFolderHash": "523374dee72d67c7b2b5f858ea0094ffda49c3ac",
       "installedAt": "2026-07-22T11:45:40.266Z",
       "updatedAt": "2026-07-22T11:45:40.266Z"
+    },
+    "apple-design": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/emilkowalski/skills.git",
+      "skillPath": "skills/apple-design/SKILL.md",
+      "skillFolderHash": "e9f5b472dfb28d8cf29f64001b6c01ef94b8168b",
+      "installedAt": "2026-07-22T16:31:25.489Z",
+      "updatedAt": "2026-07-22T16:31:25.489Z"
+    },
+    "stop-slop": {
+      "source": "hardikpandya/stop-slop",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/hardikpandya/stop-slop.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "8da1f030185bdfe8471220585162991eaeb970e9",
+      "installedAt": "2026-08-04T08:51:12.560Z",
+      "updatedAt": "2026-08-04T08:51:12.560Z"
     }
   },
   "dismissed": {
