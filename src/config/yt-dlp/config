@@ -1,0 +1,2 @@
+# ponytail: -t mp4 = h264/aac preferred, remux+merge to mp4
+-t mp4
