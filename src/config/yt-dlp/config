@@ -1,2 +1,5 @@
 # ponytail: -t mp4 = h264/aac preferred, remux+merge to mp4
 -t mp4
+--yes-playlist
+# skip anything already downloaded once, even if the file moved
+--download-archive ~/.config/yt-dlp/archive
