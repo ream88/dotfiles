@@ -1,0 +1,49 @@
+#!/bin/zsh
+# Download new YouTube Watch Later videos into ~/Downloads. Format comes from
+# ~/.config/yt-dlp/config. launchd can't read Safari's cookies (no Full Disk
+# Access), so --install exports them once to a file that yt-dlp keeps fresh.
+#
+#   watchlater             # download anything new
+#   watchlater --install   # export cookies, run every 15 min via launchd
+#
+# If the log says "The playlist does not exist", the login expired: rerun
+# --install from a terminal that has Full Disk Access.
+set -e
+
+LABEL=local.watchlater
+PLIST=~/Library/LaunchAgents/$LABEL.plist
+DATA=~/.local/share/watchlater
+YTDLP=/opt/homebrew/bin/yt-dlp
+
+mkdir -p $DATA
+
+if [[ $1 == --install ]]; then
+  $YTDLP --cookies-from-browser safari --cookies $DATA/cookies.txt \
+    --flat-playlist --print id ":ytwatchlater" >/dev/null
+  chmod 600 $DATA/cookies.txt
+
+  cat >$PLIST <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>$LABEL</string>
+  <key>ProgramArguments</key><array><string>${0:A}</string></array>
+  <key>EnvironmentVariables</key><dict><key>PATH</key><string>/opt/homebrew/bin:/usr/bin:/bin</string></dict>
+  <key>StartInterval</key><integer>900</integer>
+  <key>StandardOutPath</key><string>/tmp/watchlater.log</string>
+  <key>StandardErrorPath</key><string>/tmp/watchlater.log</string>
+</dict>
+</plist>
+EOF
+
+  launchctl bootout gui/$UID/$LABEL 2>/dev/null || true
+  launchctl bootstrap gui/$UID $PLIST
+  echo "installed; log at /tmp/watchlater.log"
+  exit 0
+fi
+
+exec $YTDLP --cookies $DATA/cookies.txt \
+  --download-archive $DATA/archive \
+  -o "~/Downloads/%(title)s [%(id)s].%(ext)s" \
+  ":ytwatchlater"
