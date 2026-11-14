@@ -1,5 +1,5 @@
 import { Clipboard, getSelectedText, showHUD } from "@raycast/api";
-import { dedent } from "./dedent";
+import { outdent } from "./outdent";
 
 export default async function Command() {
   let text: string;
@@ -9,6 +9,6 @@ export default async function Command() {
     await showHUD("No text selected");
     return;
   }
-  await Clipboard.copy(dedent(text));
-  await showHUD("Selection dedented to clipboard");
+  await Clipboard.copy(outdent(text));
+  await showHUD("Selection outdented to clipboard");
 }

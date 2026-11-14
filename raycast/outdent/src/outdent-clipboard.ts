@@ -1,5 +1,5 @@
 import { Clipboard, showHUD } from "@raycast/api";
-import { dedent } from "./dedent";
+import { outdent } from "./outdent";
 
 export default async function Command() {
   const text = await Clipboard.readText();
@@ -7,6 +7,6 @@ export default async function Command() {
     await showHUD("Clipboard is empty");
     return;
   }
-  await Clipboard.copy(dedent(text));
-  await showHUD("Clipboard dedented");
+  await Clipboard.copy(outdent(text));
+  await showHUD("Clipboard outdented");
 }

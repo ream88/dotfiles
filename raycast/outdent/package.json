@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "dedent",
-  "title": "Dedent",
-  "description": "Strip common leading whitespace from text.",
+  "name": "outdent",
+  "title": "Outdent",
+  "description": "Remove one level of indentation from text, like Shift+Tab in Zed.",
   "icon": "icon.png",
   "author": "ream88",
   "license": "MIT",
@@ -15,21 +15,21 @@
   ],
   "commands": [
     {
-      "name": "dedent-clipboard",
-      "title": "Dedent Clipboard",
-      "description": "Strip the common leading whitespace from each line in the clipboard.",
+      "name": "outdent-clipboard",
+      "title": "Outdent Clipboard",
+      "description": "Remove one level of indentation from each line in the clipboard.",
       "mode": "no-view"
     },
     {
-      "name": "dedent-selection",
-      "title": "Dedent Selection",
-      "description": "Dedent the current selection and copy the result to the clipboard.",
+      "name": "outdent-selection",
+      "title": "Outdent Selection",
+      "description": "Outdent the current selection and copy the result to the clipboard.",
       "mode": "no-view"
     },
     {
-      "name": "dedent-clipboard-and-paste",
-      "title": "Dedent Clipboard and Paste",
-      "description": "Dedent the clipboard contents and paste the result.",
+      "name": "outdent-and-paste",
+      "title": "Outdent and Paste",
+      "description": "Outdent the clipboard contents and paste the result.",
       "mode": "no-view"
     }
   ],
