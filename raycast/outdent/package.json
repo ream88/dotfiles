@@ -31,6 +31,12 @@
       "title": "Outdent and Paste",
       "description": "Outdent the clipboard contents and paste the result.",
       "mode": "no-view"
+    },
+    {
+      "name": "outdent-join-and-paste",
+      "title": "Outdent, Join Lines and Paste",
+      "description": "Join the clipboard contents into a single line and paste the result.",
+      "mode": "no-view"
     }
   ],
   "dependencies": {

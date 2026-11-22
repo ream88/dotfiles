@@ -19,6 +19,8 @@ declare namespace Preferences {
   export type OutdentSelection = ExtensionPreferences & {}
   /** Preferences accessible in the `outdent-and-paste` command */
   export type OutdentAndPaste = ExtensionPreferences & {}
+  /** Preferences accessible in the `outdent-join-and-paste` command */
+  export type OutdentJoinAndPaste = ExtensionPreferences & {}
 }
 
 declare namespace Arguments {
@@ -28,5 +30,7 @@ declare namespace Arguments {
   export type OutdentSelection = {}
   /** Arguments passed to the `outdent-and-paste` command */
   export type OutdentAndPaste = {}
+  /** Arguments passed to the `outdent-join-and-paste` command */
+  export type OutdentJoinAndPaste = {}
 }
 

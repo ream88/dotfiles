@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { outdent } from "./outdent";
+import { joinLines, outdent } from "./outdent";
 
 const lines = (...l: string[]) => l.join("\n");
 
@@ -84,5 +84,38 @@ describe("outdent with the default tab size of 2", () => {
 
   it("handles an empty string", () => {
     expect(outdent("")).toBe("");
+  });
+});
+
+describe("joinLines", () => {
+  it("joins a wrapped command into a single line", () => {
+    const input = lines(
+      "echo '10.0.0.181 nerves-e870' | sudo tee -a",
+      "  /etc/hosts",
+    );
+    expect(joinLines(input)).toBe(
+      "echo '10.0.0.181 nerves-e870' | sudo tee -a /etc/hosts",
+    );
+  });
+
+  it("joins lines at the same indentation", () => {
+    expect(joinLines("  git branch -D\n  dev\n")).toBe("git branch -D dev");
+  });
+
+  it("drops backslash continuations", () => {
+    const input = lines("  curl example.com \\", "    -v \\", "    -o out");
+    expect(joinLines(input)).toBe("curl example.com -v -o out");
+  });
+
+  it("drops blank lines and surrounding newlines", () => {
+    expect(joinLines("\n  foo\n\n  bar\n\n")).toBe("foo bar");
+  });
+
+  it("handles CRLF line endings", () => {
+    expect(joinLines("foo\r\n  bar\r\n")).toBe("foo bar");
+  });
+
+  it("handles an empty string", () => {
+    expect(joinLines("")).toBe("");
   });
 });

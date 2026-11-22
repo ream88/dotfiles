@@ -17,3 +17,12 @@ export function outdent(text: string, tabSize = TAB_SIZE): string {
     .map((line) => line.slice(outdentLen(line, tabSize)))
     .join("\n");
 }
+
+/** Collapse the text into a single line that can be pasted into a shell. */
+export function joinLines(text: string): string {
+  return text
+    .split(/\r?\n|\r/)
+    .map((line) => line.replace(/\\$/, "").trim())
+    .filter((line) => line.length > 0)
+    .join(" ");
+}
